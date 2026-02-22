@@ -84,9 +84,10 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          안녕하세요, <br />
+          {/* 안녕하세요, <br />
           <span className="highlight">정동균</span>
-          입니다.
+          입니다. */}
+          이히힣 이민아 바보 아니당
         </Title>
 
         <Description
