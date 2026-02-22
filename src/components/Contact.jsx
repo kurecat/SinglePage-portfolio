@@ -109,26 +109,26 @@ const Contact = () => {
         animate={inView ? "visible" : "hidden"}
       >
         {/* href의 mailto: 뒤에 실제 이메일 주소를 적어주세요 */}
-        <ContactButton href="mailto:developer@example.com">
+        <ContactButton href="ochant777@gmail.com">
           📧 이메일 보내기
         </ContactButton>
 
         {/* href에 실제 GitHub 주소를 적어주세요 */}
         <ContactButton
-          href="https://github.com"
+          href="https://github.com/kurecat"
           target="_blank"
           rel="noopener noreferrer"
         >
           💻 GitHub 방문하기
         </ContactButton>
 
-        <ContactButton
+        {/* <ContactButton
           href="https://blog.example.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           📝 기술 블로그
-        </ContactButton>
+        </ContactButton> */}
       </ContactCard>
 
       <FooterText>

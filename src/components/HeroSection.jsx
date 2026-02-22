@@ -85,7 +85,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           안녕하세요, <br />
-          문제를 해결하는 개발자 <span className="highlight">정동균</span>
+          <span className="highlight">정동균</span>
           입니다.
         </Title>
 
