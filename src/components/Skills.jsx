@@ -23,7 +23,7 @@ const skillCategories = [
 const Section = styled.section`
   min-height: 100vh;
   padding: 100px 20px;
-  background-color: #1a1a1a; /* Hero 섹션보다 살짝 밝은 톤으로 구분감 부여 */
+  background-color: #121212; /* Hero 섹션보다 살짝 밝은 톤으로 구분감 부여 */
   color: #ffffff;
   display: flex;
   flex-direction: column;

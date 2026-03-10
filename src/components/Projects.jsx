@@ -38,7 +38,7 @@ const projectData = [
 const Section = styled.section`
   min-height: 100vh;
   padding: 100px 20px;
-  background-color: #121212; /* Hero 섹션과 동일한 배경색으로 교차 배치 */
+  background-color: #1a1a1a; /* Hero 섹션과 동일한 배경색으로 교차 배치 */
   color: #ffffff;
   display: flex;
   flex-direction: column;

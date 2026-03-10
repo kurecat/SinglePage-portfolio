@@ -9,7 +9,6 @@ const Nav = styled.nav`
   left: 0;
   width: 100%;
   height: 80px;
-  /* 스크롤 위치에 따라 배경색을 다르게 적용하여 가독성을 높입니다 */
   background: ${({ $isScrolled }) =>
     $isScrolled ? "rgba(18, 18, 18, 0.9)" : "transparent"};
   backdrop-filter: ${({ $isScrolled }) =>
@@ -58,7 +57,6 @@ const NavItem = styled.li`
   cursor: pointer;
   transition: color 0.3s ease;
 
-  /* react-scroll에서 활성화된 메뉴에 'active' 클래스를 붙여줍니다 */
   .active {
     color: #646cff;
     font-weight: bold;
@@ -73,7 +71,6 @@ const NavItem = styled.li`
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // 화면 스크롤을 감지하여 내비바 배경 스타일을 변경하는 로직
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -90,7 +87,6 @@ const Navbar = () => {
   return (
     <Nav $isScrolled={isScrolled}>
       <NavContainer>
-        {/* 로고 클릭 시 맨 위(Hero)로 이동 */}
         <Logo>
           <Link to="hero" smooth={true} duration={500}>
             Dev<span>.</span>Portfolio
@@ -110,6 +106,21 @@ const Navbar = () => {
               Home
             </Link>
           </NavItem>
+          
+          {/* 🔥 새로 추가된 About 메뉴 🔥 */}
+          <NavItem>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={0}
+            >
+              About
+            </Link>
+          </NavItem>
+
           <NavItem>
             <Link
               activeClass="active"
@@ -122,6 +133,7 @@ const Navbar = () => {
               Skills
             </Link>
           </NavItem>
+          
           <NavItem>
             <Link
               activeClass="active"
