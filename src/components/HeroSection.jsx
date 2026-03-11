@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { Link } from "react-scroll"; // 🔥 react-scroll 임포트 추가
+import { Link } from "react-scroll";
 
 // --- Styled Components 정의 ---
 
@@ -20,7 +20,6 @@ const Content = styled.div`
   max-width: 800px;
 `;
 
-// framer-motion과 styled-components 결합: styled(motion.태그명)
 const Title = styled(motion.h1)`
   font-size: 3.5rem;
   margin-bottom: 20px;
@@ -39,7 +38,6 @@ const Description = styled(motion.p)`
 `;
 
 const ButtonGroup = styled(motion.div)`
-  /* Link 컴포넌트가 button을 감싸면서 발생할 수 있는 레이아웃 틀어짐 방지 */
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -83,7 +81,6 @@ const HeroSection = () => {
   return (
     <Section id="hero">
       <Content>
-        {/* 애니메이션 속성은 그대로 사용 가능합니다 */}
         <Title
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -94,14 +91,14 @@ const HeroSection = () => {
           입니다.
         </Title>
 
+        {/* 🔥 AboutMe 섹션과 이어지도록 포트폴리오의 핵심 메시지로 수정 */}
         <Description
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
         >
-          반도체, 디스플레이, 자동차 산업을 아우르는 MES 시스템 구축 경험을
-          바탕으로 <br />
-          효율적이고 안정적인 웹 서비스를 만들어갑니다.
+          B2B 제조 솔루션(MES)부터 B2C 웹 플랫폼까지,<br />
+          복잡한 데이터를 직관적인 UI로 풀어내며 매끄러운 사용자 경험을 설계합니다.
         </Description>
 
         <ButtonGroup
@@ -109,7 +106,6 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          {/* 🔥 Link 컴포넌트로 버튼을 감싸서 클릭 시 해당 id로 스크롤 이동하게 설정 */}
           <Link to="projects" smooth={true} duration={500}>
             <button className="primary-btn">프로젝트 보기</button>
           </Link>
