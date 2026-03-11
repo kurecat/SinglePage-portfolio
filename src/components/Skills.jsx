@@ -139,7 +139,7 @@ const Skills = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        Tech Stack & Domain
+        Tech Stack
       </SectionTitle>
 
       <GridContainer
