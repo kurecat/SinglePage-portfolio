@@ -9,6 +9,7 @@ const mainProjects = [
     id: 1,
     title: "반도체 패키징 공정 MES",
     period: "2026.01.15 - 2026.02.10",
+    teamSize: "5명", // 🔥 작업 인원 추가
     description: "지능화된 생산관리 솔루션(MES-WEB)으로, 반도체 패키징 공정의 데이터 추적 및 생산 관리를 돕는 통합 웹 서비스 구축",
     detailedDescription: "이 프로젝트는 반도체 패키징 공정에서 발생하는 수많은 데이터를 실시간으로 모니터링하고 제어하기 위해 기획되었습니다. 프론트엔드 메인 개발자로서 React를 활용해 재사용 가능한 UI 컴포넌트를 설계하였고, 대용량 데이터 렌더링 최적화에 집중했습니다. 백엔드(Spring Boot, JPA)와의 원활한 API 통신 구조를 설계하여 안정적인 서비스를 구현했습니다.",
     role: "Main: FrontEnd | Sub: BackEnd",
@@ -22,6 +23,7 @@ const mainProjects = [
     id: 2,
     title: "가전제품 구독 서비스",
     period: "2025.12.10 - 2025.12.26",
+    teamSize: "4명", // 🔥 작업 인원 추가
     description: "사용자 맞춤형 가전제품 대여 및 구독 내역을 관리하고 결제 흐름을 지원하는 웹 플랫폼 개발",
     detailedDescription: "사용자가 원하는 가전제품을 쉽게 찾아 구독하고, 관리자는 구독 현황 및 결제 내역을 파악할 수 있는 서비스입니다. 사용자 친화적인 대시보드 UI를 구성하고, Spring Security와 JWT를 활용한 로그인/인증 로직을 프론트엔드단에서 매끄럽게 처리하는 경험을 쌓았습니다.",
     role: "Main: FrontEnd | Sub: BackEnd",
@@ -38,6 +40,7 @@ const miniProjects = [
     id: 3,
     title: "미니 프로젝트 예시",
     period: "2025.09 - 2025.10",
+    teamSize: "1명 (개인)", // 🔥 미니 프로젝트 인원 추가
     description: "학습 목적으로 진행한 간단한 토이 프로젝트입니다.",
     detailedDescription: "React의 상태 관리와 styled-components의 활용법을 익히기 위해 진행한 개인 프로젝트입니다. 간단한 CRUD 기능을 구현했습니다.",
     role: "FrontEnd Development",
@@ -289,7 +292,6 @@ const ButtonGroup = styled.div`
   gap: 15px;
   flex-wrap: wrap;
 
-  /* 🔥 버튼 태그 스타일 추가 */
   a, button {
     display: inline-block;
     padding: 12px 24px;
@@ -342,13 +344,11 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [isMiniOpen, setIsMiniOpen] = useState(false);
   
-  // 🔥 PDF 토글 상태 추가
   const [showPdf, setShowPdf] = useState(false);
 
   useEffect(() => {
     if (selectedProject) {
       document.body.style.overflow = "hidden";
-      // 🔥 모달을 열 때마다 PDF는 항상 닫힌 상태로 초기화
       setShowPdf(false);
     } else {
       document.body.style.overflow = "auto";
@@ -389,6 +389,7 @@ const Projects = () => {
             <ProjectTitle>{project.title}</ProjectTitle>
             <ProjectInfoGroup>
               <ProjectInfoText><strong>🗓 Period:</strong> {project.period}</ProjectInfoText>
+              <ProjectInfoText><strong>👥Team:</strong> {project.teamSize}</ProjectInfoText>
               <ProjectInfoText><strong>🛠 Tools:</strong> {project.tools}</ProjectInfoText>
             </ProjectInfoGroup>
             <ProjectDescription>{project.description}</ProjectDescription>
@@ -427,6 +428,8 @@ const Projects = () => {
                   <ProjectTitle>{project.title}</ProjectTitle>
                   <ProjectInfoGroup>
                     <ProjectInfoText><strong>🗓 Period:</strong> {project.period}</ProjectInfoText>
+                    {/* 🔥 미니 프로젝트 카드 UI에 팀 사이즈 추가 */}
+                    <ProjectInfoText><strong>👥 Team:</strong> {project.teamSize}</ProjectInfoText>
                     <ProjectInfoText><strong>🛠 Tools:</strong> {project.tools}</ProjectInfoText>
                   </ProjectInfoGroup>
                   <ProjectDescription>{project.description}</ProjectDescription>
@@ -479,6 +482,8 @@ const Projects = () => {
               
               <ProjectInfoGroup>
                 <ProjectInfoText><strong>🗓 Period:</strong> {selectedProject.period}</ProjectInfoText>
+                {/* 🔥 모달창 내부 UI에 팀 사이즈 추가 */}
+                <ProjectInfoText><strong>👥 Team:</strong> {selectedProject.teamSize}</ProjectInfoText>
                 <ProjectInfoText><strong>🛠 Tools:</strong> {selectedProject.tools}</ProjectInfoText>
                 <ProjectInfoText><strong>🎯 Role:</strong> {selectedProject.role}</ProjectInfoText>
               </ProjectInfoGroup>
@@ -494,7 +499,6 @@ const Projects = () => {
                   </a>
                 )}
                 
-                {/* 🔥 PDF 발표 자료 토글 버튼 */}
                 {selectedProject.localPdfPath && (
                   <button onClick={() => setShowPdf(!showPdf)}>
                     {showPdf ? "📄 발표 자료 닫기" : "📄 발표 자료 보기"}
@@ -502,7 +506,7 @@ const Projects = () => {
                 )}
               </ButtonGroup>
 
-              {/* 🔥 최하단: PDF 뷰어 영역 (버튼 클릭 시 슬라이드 다운) */}
+              {/* 최하단: PDF 뷰어 영역 */}
               <AnimatePresence>
                 {selectedProject.localPdfPath && showPdf && (
                   <motion.div
