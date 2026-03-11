@@ -15,8 +15,8 @@ const mainProjects = [
     tools: "IntelliJ, VS Code, Figma",
     techStack: ["React", "Axios", "Java", "C#", "Spring Boot", "JPA", "JWT", "MySQL"],
     localVideoPath: `${import.meta.env.BASE_URL}videos/MES.mp4`, 
-    githubUrl: "https://github.com/kurecat/project1", 
-    presentationUrl: "https://file.notion.so/f/f/bdf8d538-0573-4e53-8871-08828a72d8e6/3b93ff40-3d11-4414-b0f0-65ef46266705/%EC%A7%80%EB%8A%A5%ED%99%94%EB%90%9C_%EC%83%9D%EC%82%B0%EA%B4%80%EB%A6%AC_%EC%86%94%EB%A3%A8%EC%85%98_(MES-WEB).pdf?table=block&id=303aa804-9ef5-8026-a1a8-cce2970f988a&spaceId=bdf8d538-0573-4e53-8871-08828a72d8e6&expirationTimestamp=1773273600000&signature=O4qDCaJro42rjC81IIaR5s0GaGeDhgI4Q_11WfhCYRM&downloadName=%EC%A7%80%EB%8A%A5%ED%99%94%EB%90%9C+%EC%83%9D%EC%82%B0%EA%B4%80%EB%A6%AC+%EC%86%94%EB%A3%A8%EC%85%98+%28MES-WEB%29.pdf", 
+    githubUrl: "https://github.com/kurecat/mes_final_project_total", 
+    localPdfPath: `${import.meta.env.BASE_URL}docs/MES.pdf`,
   },
   {
     id: 2,
@@ -28,12 +28,11 @@ const mainProjects = [
     tools: "IntelliJ, VS Code, Figma",
     techStack: ["React", "Axios", "JavaScript", "Java", "Spring Boot", "Spring Security", "JPA", "MySQL"],
     localVideoPath: "", 
-    githubUrl: "https://github.com/kurecat/project2",
-    presentationUrl: "",
+    githubUrl: "https://github.com/qdpnok/nurim", 
+    localPdfPath: `${import.meta.env.BASE_URL}docs/NURIM.pdf`,
   },
 ];
 
-// --- 🌟 미니 프로젝트 데이터 (원하시는 내용으로 수정해주세요) ---
 const miniProjects = [
   {
     id: 3,
@@ -128,10 +127,7 @@ const ProjectInfoText = styled.span`
   display: block;
   margin-bottom: 5px;
 
-  strong {
-    color: #aaaaaa;
-    font-weight: 500;
-  }
+  strong { color: #aaaaaa; font-weight: 500; }
 `;
 
 const ProjectDescription = styled.p`
@@ -157,7 +153,6 @@ const TechItem = styled.span`
   font-size: 0.8rem;
 `;
 
-// 🔥 드롭다운 버튼 스타일
 const DropdownButton = styled.button`
   background: transparent;
   color: #ffffff;
@@ -179,12 +174,9 @@ const DropdownButton = styled.button`
     background: rgba(100, 108, 255, 0.1);
   }
 
-  /* 아이콘 회전 애니메이션용 클래스 */
   .icon {
     transition: transform 0.3s ease;
-    &.open {
-      transform: rotate(180deg);
-    }
+    &.open { transform: rotate(180deg); }
   }
 `;
 
@@ -209,7 +201,7 @@ const ModalContent = styled(motion.div)`
   border: 1px solid #333;
   border-radius: 16px;
   width: 100%;
-  max-width: 800px;
+  max-width: 850px; 
   max-height: 90vh;
   overflow-y: auto;
   padding: 40px;
@@ -232,6 +224,7 @@ const CloseButton = styled.button`
   cursor: pointer;
   transition: color 0.3s;
   line-height: 1;
+  z-index: 10;
 
   &:hover { color: #ffffff; }
 `;
@@ -250,6 +243,31 @@ const VideoContainer = styled.div`
     max-height: 450px;
     object-fit: contain;
   }
+`;
+
+const PdfContainer = styled.div`
+  margin-top: 30px;
+  width: 100%;
+  height: 600px; 
+  border-radius: 8px;
+  border: 1px solid #333;
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #ffffff; 
+  }
+`;
+
+const SectionSubHeading = styled.h4`
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-left: 4px solid #646cff;
+  padding-left: 10px;
 `;
 
 const ModalTitle = styled.h2`
@@ -271,14 +289,19 @@ const ButtonGroup = styled.div`
   gap: 15px;
   flex-wrap: wrap;
 
-  a {
+  /* 🔥 버튼 태그 스타일 추가 */
+  a, button {
     display: inline-block;
     padding: 12px 24px;
     background: #333;
     color: #fff;
     text-decoration: none;
+    border: none;
     border-radius: 8px;
+    font-size: 1rem;
     font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
     transition: all 0.3s;
 
     &:hover { background: #646cff; transform: translateY(-2px); }
@@ -308,33 +331,25 @@ const modalContentVariants = {
   exit: { opacity: 0, y: 20, scale: 0.95, transition: { duration: 0.3 } },
 };
 
-// 🔥 아코디언(드롭다운) 애니메이션 설정
 const accordionVariants = {
   hidden: { height: 0, opacity: 0, overflow: "hidden" },
-  visible: { 
-    height: "auto", 
-    opacity: 1, 
-    overflow: "hidden", 
-    transition: { duration: 0.5, ease: "easeInOut" } 
-  },
-  exit: { 
-    height: 0, 
-    opacity: 0, 
-    overflow: "hidden", 
-    transition: { duration: 0.4, ease: "easeInOut" } 
-  }
+  visible: { height: "auto", opacity: 1, overflow: "hidden", transition: { duration: 0.5, ease: "easeInOut" } },
+  exit: { height: 0, opacity: 0, overflow: "hidden", transition: { duration: 0.4, ease: "easeInOut" } }
 };
 
 const Projects = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [selectedProject, setSelectedProject] = useState(null);
-  
-  // 🔥 미니 프로젝트 열림/닫힘 상태 관리
   const [isMiniOpen, setIsMiniOpen] = useState(false);
+  
+  // 🔥 PDF 토글 상태 추가
+  const [showPdf, setShowPdf] = useState(false);
 
   useEffect(() => {
     if (selectedProject) {
       document.body.style.overflow = "hidden";
+      // 🔥 모달을 열 때마다 PDF는 항상 닫힌 상태로 초기화
+      setShowPdf(false);
     } else {
       document.body.style.overflow = "auto";
     }
@@ -359,7 +374,6 @@ const Projects = () => {
         Main Projects
       </SectionSubtitle>
 
-      {/* --- 메인 프로젝트 그리드 --- */}
       <GridContainer ref={ref}>
         {mainProjects.map((project, index) => (
           <Card
@@ -387,13 +401,11 @@ const Projects = () => {
         ))}
       </GridContainer>
 
-      {/* --- 미니 프로젝트 토글 버튼 --- */}
       {/* <DropdownButton onClick={() => setIsMiniOpen(!isMiniOpen)}>
         Mini Projects
         <span className={`icon ${isMiniOpen ? "open" : ""}`}>▼</span>
       </DropdownButton> */}
 
-      {/* --- 미니 프로젝트 드롭다운 영역 --- */}
       <AnimatePresence>
         {isMiniOpen && (
           <motion.div
@@ -430,7 +442,6 @@ const Projects = () => {
         )}
       </AnimatePresence>
 
-      {/* --- 모달 영역 (메인/미니 모두 공용으로 사용됨) --- */}
       <AnimatePresence>
         {selectedProject && (
           <ModalOverlay
@@ -449,6 +460,7 @@ const Projects = () => {
             >
               <CloseButton onClick={() => setSelectedProject(null)}>×</CloseButton>
               
+              {/* 상단: 시연 영상 */}
               {selectedProject.localVideoPath && (
                 <VideoContainer>
                   <video 
@@ -471,20 +483,46 @@ const Projects = () => {
                 <ProjectInfoText><strong>🎯 Role:</strong> {selectedProject.role}</ProjectInfoText>
               </ProjectInfoGroup>
 
+              <SectionSubHeading>프로젝트 상세 소개</SectionSubHeading>
               <ModalDetailedText>{selectedProject.detailedDescription}</ModalDetailedText>
 
+              {/* 하단: 링크 버튼 그룹 */}
               <ButtonGroup>
                 {selectedProject.githubUrl && (
                   <a href={selectedProject.githubUrl} target="_blank" rel="noreferrer" className="primary">
                     💻 GitHub 코드 보기
                   </a>
                 )}
-                {selectedProject.presentationUrl && (
-                  <a href={selectedProject.presentationUrl} target="_blank" rel="noreferrer">
-                    📄 발표 자료 보기
-                  </a>
+                
+                {/* 🔥 PDF 발표 자료 토글 버튼 */}
+                {selectedProject.localPdfPath && (
+                  <button onClick={() => setShowPdf(!showPdf)}>
+                    {showPdf ? "📄 발표 자료 닫기" : "📄 발표 자료 보기"}
+                  </button>
                 )}
               </ButtonGroup>
+
+              {/* 🔥 최하단: PDF 뷰어 영역 (버튼 클릭 시 슬라이드 다운) */}
+              <AnimatePresence>
+                {selectedProject.localPdfPath && showPdf && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.4 }}
+                    style={{ overflow: "hidden" }}
+                  >
+                    <SectionSubHeading>📄 발표 자료</SectionSubHeading>
+                    <PdfContainer>
+                      <iframe 
+                        src={`${selectedProject.localPdfPath}#view=FitH`} 
+                        title={`${selectedProject.title} 발표자료`}
+                      />
+                    </PdfContainer>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
             </ModalContent>
           </ModalOverlay>
         )}
