@@ -533,7 +533,7 @@ Error generating stack: `+l.message+`
   align-items: center;
   max-width: 900px;
   width: 100%;
-  gap: 60px; /* 섹션 간 간격 확대 */
+  gap: 60px;
 `,WO=rt(Pt.div)`
   font-size: 1.15rem;
   color: #cccccc;
@@ -584,6 +584,7 @@ Error generating stack: `+l.message+`
     font-size: 0.95rem;
     line-height: 1.6;
     margin: 0;
+    word-break: keep-all;
   }
 `,IO=rt(Pt.div)`
   display: grid;
@@ -619,7 +620,7 @@ Error generating stack: `+l.message+`
   color: #ffffff;
   font-weight: 500;
   margin: 0;
-`,M0={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.2}}},Ui={hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.6,ease:"easeOut"}}},tD=()=>{const[n,a]=qo({triggerOnce:!0,threshold:.1});return L.jsxs(ZO,{id:"about",children:[L.jsx(JO,{initial:{opacity:0,y:-20},animate:a?{opacity:1,y:0}:{},transition:{duration:.6},children:"About Me"}),L.jsxs(FO,{ref:n,children:[L.jsxs(WO,{variants:Ui,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs("p",{style:{margin:0,fontSize:"1.3rem",marginBottom:"15px"},children:['"복잡한 제조 공정을 ',L.jsx("strong",{children:"직관적인 웹 UI"}),'로 풀어냅니다."']}),L.jsxs("p",{style:{margin:0},children:["안녕하세요, ",L.jsx("span",{className:"highlight",children:"MES(생산관리시스템) 도메인 특화 프론트엔드 개발자 정동균"}),"입니다. 반도체 및 디스플레이 등 산업 현장의 대용량 데이터를 다루고, 사용자 친화적인 웹 솔루션을 구축한 경험이 있습니다."]})]}),L.jsxs($O,{variants:M0,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs(A0,{variants:Ui,children:[L.jsx("h3",{children:"🎯 User-Centric UI"}),L.jsx("p",{children:"작업자가 현장에서 마주하는 복잡한 데이터들을 빠르고 정확하게 인지할 수 있도록, 렌더링 성능과 직관적인 화면 설계에 집중합니다."})]}),L.jsxs(A0,{variants:Ui,children:[L.jsx("h3",{children:"💡 Domain Knowledge"}),L.jsx("p",{children:"단순한 화면 구성을 넘어 BOM, POP 등 제조업 핵심 프로세스를 이해하고, 이를 바탕으로 백엔드 및 현장 설비와 유기적으로 통신하는 코드를 작성합니다."})]})]}),L.jsxs(IO,{variants:M0,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Name"}),L.jsx(eo,{children:"정동균"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Location"}),L.jsx(eo,{children:"충청남도 천안시"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Position"}),L.jsx(eo,{children:"Frontend Developer"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Email"}),L.jsx(eo,{children:"ochant777@gmail.com"})]})]})]})]})},eD=rt(Pt.button)`
+`,M0={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.2}}},Ui={hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.6,ease:"easeOut"}}},tD=()=>{const[n,a]=qo({triggerOnce:!0,threshold:.1});return L.jsxs(ZO,{id:"about",children:[L.jsx(JO,{initial:{opacity:0,y:-20},animate:a?{opacity:1,y:0}:{},transition:{duration:.6},children:"About Me"}),L.jsxs(FO,{ref:n,children:[L.jsxs(WO,{variants:Ui,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs("p",{style:{margin:0,fontSize:"1.3rem",marginBottom:"15px"},children:['"복잡한 데이터는 ',L.jsx("strong",{children:"직관적"}),"으로, 사용자 경험은 ",L.jsx("strong",{children:"매끄럽게"}),' 설계합니다."']}),L.jsxs("p",{style:{margin:0},children:["안녕하세요, ",L.jsx("span",{className:"highlight",children:"B2B 제조 솔루션부터 B2C 웹 플랫폼까지 아우르는 프론트엔드 개발자 정동균"}),"입니다. 반도체 공정의 방대한 데이터를 다루는 MES 시스템과 결제 및 인증 흐름이 중요한 가전제품 구독 서비스를 구축하며, 유연하고 확장성 있는 프론트엔드 아키텍처를 끊임없이 고민해왔습니다."]})]}),L.jsxs($O,{variants:M0,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs(A0,{variants:Ui,children:[L.jsx("h3",{children:"📊 데이터 렌더링 최적화"}),L.jsx("p",{children:"반도체 MES 프로젝트를 진행하며 수많은 실시간 데이터를 지연 없이 렌더링하는 UI를 설계했습니다. 재사용 가능한 컴포넌트 구조를 통해 유지보수성을 높이고 화면 성능을 개선하는 데 집중합니다."})]}),L.jsxs(A0,{variants:Ui,children:[L.jsx("h3",{children:"🔒 안전하고 매끄러운 UX"}),L.jsx("p",{children:"가전제품 구독 서비스에서 JWT와 Spring Security를 활용한 프론트엔드 인증 로직을 구현했습니다. 복잡한 비즈니스 로직(결제, 구독) 속에서도 사용자가 길을 잃지 않는 직관적인 대시보드를 구축합니다."})]})]}),L.jsxs(IO,{variants:M0,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Name"}),L.jsx(eo,{children:"정동균"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Location"}),L.jsx(eo,{children:"충청남도 천안시"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Position"}),L.jsx(eo,{children:"Frontend Developer"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Email"}),L.jsx(eo,{children:"ochant777@gmail.com"})]})]})]})]})},eD=rt(Pt.button)`
   position: fixed;
   bottom: 40px;
   right: 40px;
