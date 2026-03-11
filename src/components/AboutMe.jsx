@@ -27,7 +27,7 @@ const ContentWrapper = styled.div`
   align-items: center;
   max-width: 900px;
   width: 100%;
-  gap: 60px; /* 섹션 간 간격 확대 */
+  gap: 60px;
 `;
 
 const Description = styled(motion.div)`
@@ -51,7 +51,6 @@ const Description = styled(motion.div)`
   }
 `;
 
-// 🔥 핵심 가치관 영역 스타일 추가
 const ValuesContainer = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
@@ -85,6 +84,7 @@ const ValueBox = styled(motion.div)`
     font-size: 0.95rem;
     line-height: 1.6;
     margin: 0;
+    word-break: keep-all;
   }
 `;
 
@@ -152,7 +152,7 @@ const itemVariants = {
 const AboutMe = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1, // 애니메이션 발동 기준점 살짝 조정
+    threshold: 0.1,
   });
 
   return (
@@ -172,27 +172,28 @@ const AboutMe = () => {
           animate={inView ? "visible" : "hidden"}
         >
           <p style={{ margin: 0, fontSize: "1.3rem", marginBottom: "15px" }}>
-            "복잡한 제조 공정을 <strong>직관적인 웹 UI</strong>로 풀어냅니다."
+            "복잡한 데이터는 <strong>직관적</strong>으로, 사용자 경험은 <strong>매끄럽게</strong> 설계합니다."
           </p>
           <p style={{ margin: 0 }}>
-            안녕하세요, <span className="highlight">MES(생산관리시스템) 도메인 특화 프론트엔드 개발자 정동균</span>입니다.
-            반도체 및 디스플레이 등 산업 현장의 대용량 데이터를 다루고, 사용자 친화적인 웹 솔루션을 구축한 경험이 있습니다.
+            안녕하세요, <span className="highlight">B2B 제조 솔루션부터 B2C 웹 플랫폼까지 아우르는 프론트엔드 개발자 정동균</span>입니다.
+            반도체 공정의 방대한 데이터를 다루는 MES 시스템과 결제 및 인증 흐름이 중요한 가전제품 구독 서비스를 구축하며, 
+            유연하고 확장성 있는 프론트엔드 아키텍처를 끊임없이 고민해왔습니다.
           </p>
         </Description>
 
-        {/* 🔥 핵심 가치관 영역 추가 */}
+        {/* 🔥 메인 프로젝트 기반 핵심 가치관 영역 */}
         <ValuesContainer
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
           <ValueBox variants={itemVariants}>
-            <h3>🎯 User-Centric UI</h3>
-            <p>작업자가 현장에서 마주하는 복잡한 데이터들을 빠르고 정확하게 인지할 수 있도록, 렌더링 성능과 직관적인 화면 설계에 집중합니다.</p>
+            <h3>📊 데이터 렌더링 최적화</h3>
+            <p>반도체 MES 프로젝트를 진행하며 수많은 실시간 데이터를 지연 없이 렌더링하는 UI를 설계했습니다. 재사용 가능한 컴포넌트 구조를 통해 유지보수성을 높이고 화면 성능을 개선하는 데 집중합니다.</p>
           </ValueBox>
           <ValueBox variants={itemVariants}>
-            <h3>💡 Domain Knowledge</h3>
-            <p>단순한 화면 구성을 넘어 BOM, POP 등 제조업 핵심 프로세스를 이해하고, 이를 바탕으로 백엔드 및 현장 설비와 유기적으로 통신하는 코드를 작성합니다.</p>
+            <h3>🔒 안전하고 매끄러운 UX</h3>
+            <p>가전제품 구독 서비스에서 JWT와 Spring Security를 활용한 프론트엔드 인증 로직을 구현했습니다. 복잡한 비즈니스 로직(결제, 구독) 속에서도 사용자가 길을 잃지 않는 직관적인 대시보드를 구축합니다.</p>
           </ValueBox>
         </ValuesContainer>
 
