@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import { Link } from "react-scroll"; // 🔥 react-scroll 임포트 추가
 
 // --- Styled Components 정의 ---
 
@@ -38,8 +39,12 @@ const Description = styled(motion.p)`
 `;
 
 const ButtonGroup = styled(motion.div)`
+  /* Link 컴포넌트가 button을 감싸면서 발생할 수 있는 레이아웃 틀어짐 방지 */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
   button {
-    margin: 0 10px;
     padding: 14px 28px;
     font-size: 1rem;
     border-radius: 8px;
@@ -104,8 +109,14 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <button className="primary-btn">프로젝트 보기</button>
-          <button className="secondary-btn">연락하기</button>
+          {/* 🔥 Link 컴포넌트로 버튼을 감싸서 클릭 시 해당 id로 스크롤 이동하게 설정 */}
+          <Link to="projects" smooth={true} duration={500}>
+            <button className="primary-btn">프로젝트 보기</button>
+          </Link>
+          
+          <Link to="contact" smooth={true} duration={500}>
+            <button className="secondary-btn">연락하기</button>
+          </Link>
         </ButtonGroup>
       </Content>
     </Section>

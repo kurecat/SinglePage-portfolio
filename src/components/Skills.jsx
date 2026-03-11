@@ -3,19 +3,29 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-// --- 데이터 정의 ---
+// --- 데이터 정의 (교육 과정 및 이미지 기반 최적화) ---
+// AJAX / JSON "PL/SQL" "MyBatis / JDBC"
 const skillCategories = [
   {
     title: "Frontend",
-    skills: ["HTML/CSS", "JavaScript", "React"],
+    skills: ["React", "JavaScript", "HTML5 / CSS3", "Axios"],
   },
   {
     title: "Backend",
-    skills: ["Java", "Spring Boot", "C#"],
+    skills: ["Java", "Spring Boot", "C#", "REST API", "JSON Web Token"],
   },
   {
-    title: "Database & Architecture",
-    skills: ["Database Design", "MES Systems", "UI Components"],
+    title: "Database",
+    skills: ["OracleDB", "MySQL", "MongoDB"],
+  },
+  // {
+  //   // 🔥 이 포트폴리오의 가장 큰 차별점인 도메인 지식 강조
+  //   title: "MES Domain Knowledge", 
+  //   skills: ["스마트 팩토리", "BOM / MRP 설계", "공정/실적 관리 (POP)", "설비 연동 (PLC)", "KPI 대시보드"],
+  // },
+  {
+    title: "Tools & Collaboration",
+    skills: ["Git / GitHub", "Figma", "Notion.so"],
   },
 ];
 
@@ -23,11 +33,12 @@ const skillCategories = [
 const Section = styled.section`
   min-height: 100vh;
   padding: 100px 20px;
-  background-color: #121212; /* Hero 섹션보다 살짝 밝은 톤으로 구분감 부여 */
+  background-color: #121212; /* AboutMe 섹션(#1a1a1a)과 대비되도록 어두운 톤 적용 */
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
 const SectionTitle = styled(motion.h2)`
@@ -39,25 +50,33 @@ const SectionTitle = styled(motion.h2)`
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  gap: 30px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
+  justify-content: center; /* 카드가 5개일 때 하단 2개가 예쁘게 가운데 정렬되도록 설정 */
 `;
 
 const CategoryCard = styled(motion.div)`
-  background: #242424;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid #333;
+  background: #1e1e1e;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid #2a2a2a;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: #646cff;
+    transform: translateY(-5px);
+  }
 `;
 
 const CategoryTitle = styled.h3`
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
   text-align: center;
+  color: #ffffff;
+  padding-bottom: 15px;
   border-bottom: 2px solid #333;
-  padding-bottom: 10px;
 `;
 
 const SkillList = styled.ul`
@@ -65,17 +84,19 @@ const SkillList = styled.ul`
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   justify-content: center;
 `;
 
 const SkillItem = styled(motion.li)`
-  background: #333;
+  background: #2a2a2a;
+  color: #cccccc;
   padding: 8px 16px;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
   transition: all 0.3s ease;
+  cursor: default;
 
   &:hover {
     background: #646cff;
@@ -90,13 +111,13 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2, // 자식 요소들이 0.2초 간격으로 순차적 등장
+      staggerChildren: 0.15, // 자식 요소들이 0.15초 간격으로 순차적 등장
     },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
@@ -106,10 +127,9 @@ const itemVariants = {
 
 // --- 메인 컴포넌트 ---
 const Skills = () => {
-  // 화면에 요소가 20% 이상 보일 때만 애니메이션 트리거
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.1,
   });
 
   return (
@@ -119,7 +139,7 @@ const Skills = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        Tech Stack
+        Tech Stack & Domain
       </SectionTitle>
 
       <GridContainer
