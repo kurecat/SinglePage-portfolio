@@ -187,7 +187,7 @@ Error generating stack: `+l.message+`
     color: white;
     transform: translateY(-3px);
   }
-`,iO={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.15}}},aO={hidden:{opacity:0,y:30},visible:{opacity:1,y:0,transition:{duration:.5,ease:"easeOut"}}},lO=()=>{const[n,a]=qo({triggerOnce:!0,threshold:.1});return L.jsxs(F2,{id:"skills",children:[L.jsx(W2,{initial:{opacity:0,y:-20},animate:a?{opacity:1,y:0}:{},transition:{duration:.6},children:"Tech Stack"}),L.jsx($2,{ref:n,variants:iO,initial:"hidden",animate:a?"visible":"hidden",children:J2.map((r,s)=>L.jsxs(I2,{variants:aO,children:[L.jsx(tO,{children:r.title}),L.jsx(eO,{children:r.skills.map((c,d)=>L.jsx(nO,{children:c},d))})]},s))})]})},rO=[{id:1,title:"반도체 패키징 공정 MES",period:"2026.01.15 - 2026.02.10",teamSize:"5명",description:"지능화된 생산관리 솔루션(MES-WEB)으로, 반도체 패키징 공정의 데이터 추적 및 생산 관리를 돕는 통합 웹 서비스 구축",detailedDescription:"이 프로젝트는 반도체 패키징 공정에서 발생하는 수많은 데이터를 실시간으로 모니터링하고 제어하기 위해 기획되었습니다. 프론트엔드 메인 개발자로서 React를 활용해 재사용 가능한 UI 컴포넌트를 설계하였고, 대용량 데이터 렌더링 최적화에 집중했습니다. 백엔드(Spring Boot, JPA)와의 원활한 API 통신 구조를 설계하여 안정적인 서비스를 구현했습니다.",role:"Main: FrontEnd | Sub: BackEnd",tools:"IntelliJ, VS Code, Figma",techStack:["React","Axios","Java","C#","Spring Boot","JPA","JWT","MySQL"],localVideoPath:"/SinglePage-portfolio/videos/MES.mp4",githubUrl:"https://github.com/kurecat/mes_final_project_total",localPdfPath:"/SinglePage-portfolio/docs/MES.pdf"},{id:2,title:"가전제품 구독 서비스",period:"2025.12.10 - 2025.12.26",teamSize:"4명",description:"사용자 맞춤형 가전제품 대여 및 구독 내역을 관리하고 결제 흐름을 지원하는 웹 플랫폼 개발",detailedDescription:"사용자가 원하는 가전제품을 쉽게 찾아 구독하고, 관리자는 구독 현황 및 결제 내역을 파악할 수 있는 서비스입니다. 사용자 친화적인 대시보드 UI를 구성하고, Spring Security와 JWT를 활용한 로그인/인증 로직을 프론트엔드단에서 매끄럽게 처리하는 경험을 쌓았습니다.",role:"Main: FrontEnd | Sub: BackEnd",tools:"IntelliJ, VS Code, Figma",techStack:["React","Axios","JavaScript","Java","Spring Boot","Spring Security","JPA","MySQL"],localVideoPath:"",githubUrl:"https://github.com/qdpnok/nurim",localPdfPath:"/SinglePage-portfolio/docs/NURIM.pdf"}],sO=[{id:3,title:"미니 프로젝트 예시",period:"2025.09 - 2025.10",teamSize:"1명 (개인)",description:"학습 목적으로 진행한 간단한 토이 프로젝트입니다.",detailedDescription:"React의 상태 관리와 styled-components의 활용법을 익히기 위해 진행한 개인 프로젝트입니다. 간단한 CRUD 기능을 구현했습니다.",role:"FrontEnd Development",tools:"VS Code",techStack:["React","JavaScript","HTML/CSS"],localVideoPath:"",githubUrl:"https://github.com/kurecat/mini-project",presentationUrl:""}],oO=rt.section`
+`,iO={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.15}}},aO={hidden:{opacity:0,y:30},visible:{opacity:1,y:0,transition:{duration:.5,ease:"easeOut"}}},lO=()=>{const[n,a]=qo({triggerOnce:!0,threshold:.1});return L.jsxs(F2,{id:"skills",children:[L.jsx(W2,{initial:{opacity:0,y:-20},animate:a?{opacity:1,y:0}:{},transition:{duration:.6},children:"Tech Stack"}),L.jsx($2,{ref:n,variants:iO,initial:"hidden",animate:a?"visible":"hidden",children:J2.map((r,s)=>L.jsxs(I2,{variants:aO,children:[L.jsx(tO,{children:r.title}),L.jsx(eO,{children:r.skills.map((c,d)=>L.jsx(nO,{children:c},d))})]},s))})]})},rO=[{id:1,title:"반도체 패키징 공정 MES",period:"2026.01.15 - 2026.02.10",teamSize:"5명",description:"지능화된 생산관리 솔루션(MES-WEB)으로, 반도체 패키징 공정의 데이터 추적 및 생산 관리를 돕는 통합 웹 서비스 구축",detailedDescription:"이 프로젝트는 반도체 패키징 공정에서 발생하는 수많은 데이터를 실시간으로 모니터링하고 제어하기 위해 기획되었습니다. 프론트엔드 메인 개발자로서 React를 활용해 재사용 가능한 UI 컴포넌트를 설계하였고, 대용량 데이터 렌더링 최적화에 집중했습니다. 백엔드(Spring Boot, JPA)와의 원활한 API 통신 구조를 설계하여 안정적인 서비스를 구현했습니다.",role:"Main: FrontEnd | Sub: BackEnd",tools:"IntelliJ, VS Code, Figma",techStack:["React","Axios","Java","C#","Spring Boot","JPA","JWT","MySQL"],localVideoPath:"/SinglePage-portfolio/videos/MES.mp4",githubUrl:"https://github.com/kurecat/mes_final_project_total",localPdfPath:"/SinglePage-portfolio/docs/MES.pdf"},{id:2,title:"가전제품 구독 서비스",period:"2025.12.10 - 2025.12.26",teamSize:"4명",description:"사용자 맞춤형 가전제품 대여 및 구독 내역을 관리하고 결제 흐름을 지원하는 웹 플랫폼 개발",detailedDescription:"사용자가 원하는 가전제품을 쉽게 찾아 구독하고, 관리자는 구독 현황 및 결제 내역을 파악할 수 있는 서비스입니다. 사용자 친화적인 대시보드 UI를 구성하고, Spring Security와 JWT를 활용한 로그인/인증 로직을 프론트엔드단에서 매끄럽게 처리하는 경험을 쌓았습니다.",role:"Main: FrontEnd | Sub: BackEnd",tools:"IntelliJ, VS Code, Figma",techStack:["React","Axios","JavaScript","Java","Spring Boot","Spring Security","JPA","MySQL"],localVideoPath:"",githubUrl:"https://github.com/qdpnok/nurim",localPdfPath:"/SinglePage-portfolio/docs/NURIM.pdf"}],sO=rt.section`
   min-height: 100vh;
   padding: 100px 20px;
   background-color: #1a1a1a;
@@ -195,11 +195,11 @@ Error generating stack: `+l.message+`
   display: flex;
   flex-direction: column;
   align-items: center;
-`,uO=rt(Pt.h2)`
+`,oO=rt(Pt.h2)`
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #646cff;
-`,cO=rt(Pt.h3)`
+`,uO=rt(Pt.h3)`
   font-size: 1.5rem;
   margin-bottom: 40px;
   color: #aaaaaa;
@@ -291,7 +291,7 @@ Error generating stack: `+l.message+`
     transition: transform 0.3s ease;
     &.open { transform: rotate(180deg); }
   }
-`;const fO=rt(Pt.div)`
+`;const cO=rt(Pt.div)`
   position: fixed;
   top: 0;
   left: 0;
@@ -304,7 +304,7 @@ Error generating stack: `+l.message+`
   align-items: center;
   justify-content: center;
   padding: 20px;
-`,dO=rt(Pt.div)`
+`,fO=rt(Pt.div)`
   background: #1e1e1e;
   border: 1px solid #333;
   border-radius: 16px;
@@ -319,7 +319,7 @@ Error generating stack: `+l.message+`
   &::-webkit-scrollbar { width: 8px; }
   &::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
   &::-webkit-scrollbar-thumb:hover { background: #646cff; }
-`,hO=rt.button`
+`,dO=rt.button`
   position: absolute;
   top: 20px;
   right: 20px;
@@ -333,7 +333,7 @@ Error generating stack: `+l.message+`
   z-index: 10;
 
   &:hover { color: #ffffff; }
-`,mO=rt.div`
+`,hO=rt.div`
   margin-bottom: 30px;
   border-radius: 8px;
   overflow: hidden;
@@ -347,7 +347,7 @@ Error generating stack: `+l.message+`
     max-height: 450px;
     object-fit: contain;
   }
-`,pO=rt.div`
+`,mO=rt.div`
   margin-top: 30px;
   width: 100%;
   height: 600px; 
@@ -368,17 +368,17 @@ Error generating stack: `+l.message+`
   margin-bottom: 15px;
   border-left: 4px solid #646cff;
   padding-left: 10px;
-`,yO=rt.h2`
+`,pO=rt.h2`
   font-size: 2rem;
   color: #ffffff;
   margin-bottom: 20px;
-`,gO=rt.p`
+`,yO=rt.p`
   font-size: 1.1rem;
   color: #cccccc;
   line-height: 1.8;
   margin-bottom: 30px;
   word-break: keep-all;
-`,vO=rt.div`
+`,gO=rt.div`
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
@@ -403,7 +403,7 @@ Error generating stack: `+l.message+`
     background: #646cff;
     &:hover { background: #535bf2; }
   }
-`,x0={hidden:{opacity:0,y:30},visible:{opacity:1,y:0,transition:{duration:.6,ease:"easeOut"}},hover:{y:-10,transition:{duration:.3}}},bO={hidden:{opacity:0},visible:{opacity:1},exit:{opacity:0}},SO={hidden:{opacity:0,y:50,scale:.95},visible:{opacity:1,y:0,scale:1,transition:{duration:.4,ease:"easeOut"}},exit:{opacity:0,y:20,scale:.95,transition:{duration:.3}}},TO={hidden:{height:0,opacity:0,overflow:"hidden"},visible:{height:"auto",opacity:1,overflow:"hidden",transition:{duration:.5,ease:"easeInOut"}},exit:{height:0,opacity:0,overflow:"hidden",transition:{duration:.4,ease:"easeInOut"}}},xO=()=>{const[n,a]=qo({triggerOnce:!0,threshold:.1}),[r,s]=I.useState(null),[c,d]=I.useState(!1),[f,h]=I.useState(!1);return I.useEffect(()=>(r?(document.body.style.overflow="hidden",h(!1)):document.body.style.overflow="auto",()=>{document.body.style.overflow="auto"}),[r]),L.jsxs(oO,{id:"projects",children:[L.jsx(uO,{initial:{opacity:0,y:-20},animate:a?{opacity:1,y:0}:{},transition:{duration:.6},children:"Project Experience"}),L.jsx(cO,{initial:{opacity:0},animate:a?{opacity:1}:{},transition:{duration:.6,delay:.2},children:"Main Projects"}),L.jsx(m0,{ref:n,children:rO.map((p,y)=>L.jsxs(p0,{variants:x0,initial:"hidden",animate:a?"visible":"hidden",whileHover:"hover",transition:{delay:y*.2},onClick:()=>s(p),children:[L.jsx(y0,{children:p.role}),L.jsx(g0,{children:p.title}),L.jsxs(Nf,{children:[L.jsxs(mn,{children:[L.jsx("strong",{children:"🗓 Period:"})," ",p.period]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"👥Team:"})," ",p.teamSize]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"🛠 Tools:"})," ",p.tools]})]}),L.jsx(v0,{children:p.description}),L.jsx(b0,{children:p.techStack.map((g,v)=>L.jsx(S0,{children:g},v))})]},p.id))}),L.jsx(yo,{children:c&&L.jsx(Pt.div,{variants:TO,initial:"hidden",animate:"visible",exit:"exit",style:{width:"100%",display:"flex",justifyContent:"center"},children:L.jsx(m0,{style:{paddingTop:"10px",paddingBottom:"30px"},children:sO.map((p,y)=>L.jsxs(p0,{whileHover:"hover",variants:x0,onClick:()=>s(p),children:[L.jsx(y0,{children:p.role}),L.jsx(g0,{children:p.title}),L.jsxs(Nf,{children:[L.jsxs(mn,{children:[L.jsx("strong",{children:"🗓 Period:"})," ",p.period]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"👥 Team:"})," ",p.teamSize]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"🛠 Tools:"})," ",p.tools]})]}),L.jsx(v0,{children:p.description}),L.jsx(b0,{children:p.techStack.map((g,v)=>L.jsx(S0,{children:g},v))})]},p.id))})})}),L.jsx(yo,{children:r&&L.jsx(fO,{variants:bO,initial:"hidden",animate:"visible",exit:"exit",onClick:()=>s(null),children:L.jsxs(dO,{variants:SO,initial:"hidden",animate:"visible",exit:"exit",onClick:p=>p.stopPropagation(),children:[L.jsx(hO,{onClick:()=>s(null),children:"×"}),r.localVideoPath&&L.jsx(mO,{children:L.jsx("video",{src:r.localVideoPath,controls:!0,autoPlay:!0,muted:!0,playsInline:!0,children:"해당 브라우저는 영상을 지원하지 않습니다."})}),L.jsx(yO,{children:r.title}),L.jsxs(Nf,{children:[L.jsxs(mn,{children:[L.jsx("strong",{children:"🗓 Period:"})," ",r.period]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"👥 Team:"})," ",r.teamSize]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"🛠 Tools:"})," ",r.tools]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"🎯 Role:"})," ",r.role]})]}),L.jsx(T0,{children:"프로젝트 상세 소개"}),L.jsx(gO,{children:r.detailedDescription}),L.jsxs(vO,{children:[r.githubUrl&&L.jsx("a",{href:r.githubUrl,target:"_blank",rel:"noreferrer",className:"primary",children:"💻 GitHub 코드 보기"}),r.localPdfPath&&L.jsx("button",{onClick:()=>h(!f),children:f?"📄 발표 자료 닫기":"📄 발표 자료 보기"})]}),L.jsx(yo,{children:r.localPdfPath&&f&&L.jsxs(Pt.div,{initial:{height:0,opacity:0},animate:{height:"auto",opacity:1},exit:{height:0,opacity:0},transition:{duration:.4},style:{overflow:"hidden"},children:[L.jsx(T0,{children:"📄 발표 자료"}),L.jsx(pO,{children:L.jsx("iframe",{src:`${r.localPdfPath}#view=FitH`,title:`${r.title} 발표자료`})})]})})]})})})]})};class mr{constructor(a=0,r="Network Error"){this.status=a,this.text=r}}const EO=()=>{if(!(typeof localStorage>"u"))return{get:n=>Promise.resolve(localStorage.getItem(n)),set:(n,a)=>Promise.resolve(localStorage.setItem(n,a)),remove:n=>Promise.resolve(localStorage.removeItem(n))}},me={origin:"https://api.emailjs.com",blockHeadless:!1,storageProvider:EO()},ih=n=>n?typeof n=="string"?{publicKey:n}:n.toString()==="[object Object]"?n:{}:{},AO=(n,a="https://api.emailjs.com")=>{if(!n)return;const r=ih(n);me.publicKey=r.publicKey,me.blockHeadless=r.blockHeadless,me.storageProvider=r.storageProvider,me.blockList=r.blockList,me.limitRate=r.limitRate,me.origin=r.origin||a},Nb=async(n,a,r={})=>{const s=await fetch(me.origin+n,{method:"POST",headers:r,body:a}),c=await s.text(),d=new mr(s.status,c);if(s.ok)return d;throw d},Ub=(n,a,r)=>{if(!n||typeof n!="string")throw"The public key is required. Visit https://dashboard.emailjs.com/admin/account";if(!a||typeof a!="string")throw"The service ID is required. Visit https://dashboard.emailjs.com/admin";if(!r||typeof r!="string")throw"The template ID is required. Visit https://dashboard.emailjs.com/admin/templates"},MO=n=>{if(n&&n.toString()!=="[object Object]")throw"The template params have to be the object. Visit https://www.emailjs.com/docs/sdk/send/"},Hb=n=>n.webdriver||!n.languages||n.languages.length===0,qb=()=>new mr(451,"Unavailable For Headless Browser"),CO=(n,a)=>{if(!Array.isArray(n))throw"The BlockList list has to be an array";if(typeof a!="string")throw"The BlockList watchVariable has to be a string"},_O=n=>!n.list?.length||!n.watchVariable,OO=(n,a)=>n instanceof FormData?n.get(a):n[a],Yb=(n,a)=>{if(_O(n))return!1;CO(n.list,n.watchVariable);const r=OO(a,n.watchVariable);return typeof r!="string"?!1:n.list.includes(r)},Gb=()=>new mr(403,"Forbidden"),DO=(n,a)=>{if(typeof n!="number"||n<0)throw"The LimitRate throttle has to be a positive number";if(a&&typeof a!="string")throw"The LimitRate ID has to be a non-empty string"},wO=async(n,a,r)=>{const s=Number(await r.get(n)||0);return a-Date.now()+s},kb=async(n,a,r)=>{if(!a.throttle||!r)return!1;DO(a.throttle,a.id);const s=a.id||n;return await wO(s,a.throttle,r)>0?!0:(await r.set(s,Date.now().toString()),!1)},Xb=()=>new mr(429,"Too Many Requests"),RO=async(n,a,r,s)=>{const c=ih(s),d=c.publicKey||me.publicKey,f=c.blockHeadless||me.blockHeadless,h=c.storageProvider||me.storageProvider,p={...me.blockList,...c.blockList},y={...me.limitRate,...c.limitRate};return f&&Hb(navigator)?Promise.reject(qb()):(Ub(d,n,a),MO(r),r&&Yb(p,r)?Promise.reject(Gb()):await kb(location.pathname,y,h)?Promise.reject(Xb()):Nb("/api/v1.0/email/send",JSON.stringify({lib_version:"4.4.1",user_id:d,service_id:n,template_id:a,template_params:r}),{"Content-type":"application/json"}))},zO=n=>{if(!n||n.nodeName!=="FORM")throw"The 3rd parameter is expected to be the HTML form element or the style selector of the form"},jO=n=>typeof n=="string"?document.querySelector(n):n,VO=async(n,a,r,s)=>{const c=ih(s),d=c.publicKey||me.publicKey,f=c.blockHeadless||me.blockHeadless,h=me.storageProvider||c.storageProvider,p={...me.blockList,...c.blockList},y={...me.limitRate,...c.limitRate};if(f&&Hb(navigator))return Promise.reject(qb());const g=jO(r);Ub(d,n,a),zO(g);const v=new FormData(g);return Yb(p,v)?Promise.reject(Gb()):await kb(location.pathname,y,h)?Promise.reject(Xb()):(v.append("lib_version","4.4.1"),v.append("service_id",n),v.append("template_id",a),v.append("user_id",d),Nb("/api/v1.0/email/send-form",v))},BO={init:AO,send:RO,sendForm:VO,EmailJSResponseStatus:mr},LO=rt.section`
+`,x0={hidden:{opacity:0,y:30},visible:{opacity:1,y:0,transition:{duration:.6,ease:"easeOut"}},hover:{y:-10,transition:{duration:.3}}},vO={hidden:{opacity:0},visible:{opacity:1},exit:{opacity:0}},bO={hidden:{opacity:0,y:50,scale:.95},visible:{opacity:1,y:0,scale:1,transition:{duration:.4,ease:"easeOut"}},exit:{opacity:0,y:20,scale:.95,transition:{duration:.3}}},SO={hidden:{height:0,opacity:0,overflow:"hidden"},visible:{height:"auto",opacity:1,overflow:"hidden",transition:{duration:.5,ease:"easeInOut"}},exit:{height:0,opacity:0,overflow:"hidden",transition:{duration:.4,ease:"easeInOut"}}},TO=()=>{const[n,a]=qo({triggerOnce:!0,threshold:.1}),[r,s]=I.useState(null),[c,d]=I.useState(!1),[f,h]=I.useState(!1);return I.useEffect(()=>(r?(document.body.style.overflow="hidden",h(!1)):document.body.style.overflow="auto",()=>{document.body.style.overflow="auto"}),[r]),L.jsxs(sO,{id:"projects",children:[L.jsx(oO,{initial:{opacity:0,y:-20},animate:a?{opacity:1,y:0}:{},transition:{duration:.6},children:"Project Experience"}),L.jsx(uO,{initial:{opacity:0},animate:a?{opacity:1}:{},transition:{duration:.6,delay:.2},children:"Main Projects"}),L.jsx(m0,{ref:n,children:rO.map((p,y)=>L.jsxs(p0,{variants:x0,initial:"hidden",animate:a?"visible":"hidden",whileHover:"hover",transition:{delay:y*.2},onClick:()=>s(p),children:[L.jsx(y0,{children:p.role}),L.jsx(g0,{children:p.title}),L.jsxs(Nf,{children:[L.jsxs(mn,{children:[L.jsx("strong",{children:"🗓 Period:"})," ",p.period]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"👥Team:"})," ",p.teamSize]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"🛠 Tools:"})," ",p.tools]})]}),L.jsx(v0,{children:p.description}),L.jsx(b0,{children:p.techStack.map((g,v)=>L.jsx(S0,{children:g},v))})]},p.id))}),L.jsx(yo,{children:c&&L.jsx(Pt.div,{variants:SO,initial:"hidden",animate:"visible",exit:"exit",style:{width:"100%",display:"flex",justifyContent:"center"},children:L.jsx(m0,{style:{paddingTop:"10px",paddingBottom:"30px"},children:miniProjects.map((p,y)=>L.jsxs(p0,{whileHover:"hover",variants:x0,onClick:()=>s(p),children:[L.jsx(y0,{children:p.role}),L.jsx(g0,{children:p.title}),L.jsxs(Nf,{children:[L.jsxs(mn,{children:[L.jsx("strong",{children:"🗓 Period:"})," ",p.period]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"👥Team:"})," ",p.teamSize]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"🛠 Tools:"})," ",p.tools]})]}),L.jsx(v0,{children:p.description}),L.jsx(b0,{children:p.techStack.map((g,v)=>L.jsx(S0,{children:g},v))})]},p.id))})})}),L.jsx(yo,{children:r&&L.jsx(cO,{variants:vO,initial:"hidden",animate:"visible",exit:"exit",onClick:()=>s(null),children:L.jsxs(fO,{variants:bO,initial:"hidden",animate:"visible",exit:"exit",onClick:p=>p.stopPropagation(),children:[L.jsx(dO,{onClick:()=>s(null),children:"×"}),r.localVideoPath&&L.jsx(hO,{children:L.jsx("video",{src:r.localVideoPath,controls:!0,autoPlay:!0,muted:!0,playsInline:!0,children:"해당 브라우저는 영상을 지원하지 않습니다."})}),L.jsx(pO,{children:r.title}),L.jsxs(Nf,{children:[L.jsxs(mn,{children:[L.jsx("strong",{children:"🗓 Period:"})," ",r.period]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"👥Team:"})," ",r.teamSize]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"🛠 Tools:"})," ",r.tools]}),L.jsxs(mn,{children:[L.jsx("strong",{children:"🎯 Role:"})," ",r.role]})]}),L.jsx(T0,{children:"프로젝트 상세 소개"}),L.jsx(yO,{children:r.detailedDescription}),L.jsxs(gO,{children:[r.githubUrl&&L.jsx("a",{href:r.githubUrl,target:"_blank",rel:"noreferrer",className:"primary",children:"💻 GitHub 코드 보기"}),r.localPdfPath&&L.jsx("button",{onClick:()=>h(!f),children:f?"📄 발표 자료 닫기":"📄 발표 자료 보기"})]}),L.jsx(yo,{children:r.localPdfPath&&f&&L.jsxs(Pt.div,{initial:{height:0,opacity:0},animate:{height:"auto",opacity:1},exit:{height:0,opacity:0},transition:{duration:.4},style:{overflow:"hidden"},children:[L.jsx(T0,{children:"📄 발표 자료"}),L.jsx(mO,{children:L.jsx("iframe",{src:`${r.localPdfPath}#view=FitH`,title:`${r.title} 발표자료`})})]})})]})})})]})};class mr{constructor(a=0,r="Network Error"){this.status=a,this.text=r}}const xO=()=>{if(!(typeof localStorage>"u"))return{get:n=>Promise.resolve(localStorage.getItem(n)),set:(n,a)=>Promise.resolve(localStorage.setItem(n,a)),remove:n=>Promise.resolve(localStorage.removeItem(n))}},me={origin:"https://api.emailjs.com",blockHeadless:!1,storageProvider:xO()},ih=n=>n?typeof n=="string"?{publicKey:n}:n.toString()==="[object Object]"?n:{}:{},EO=(n,a="https://api.emailjs.com")=>{if(!n)return;const r=ih(n);me.publicKey=r.publicKey,me.blockHeadless=r.blockHeadless,me.storageProvider=r.storageProvider,me.blockList=r.blockList,me.limitRate=r.limitRate,me.origin=r.origin||a},Nb=async(n,a,r={})=>{const s=await fetch(me.origin+n,{method:"POST",headers:r,body:a}),c=await s.text(),d=new mr(s.status,c);if(s.ok)return d;throw d},Ub=(n,a,r)=>{if(!n||typeof n!="string")throw"The public key is required. Visit https://dashboard.emailjs.com/admin/account";if(!a||typeof a!="string")throw"The service ID is required. Visit https://dashboard.emailjs.com/admin";if(!r||typeof r!="string")throw"The template ID is required. Visit https://dashboard.emailjs.com/admin/templates"},AO=n=>{if(n&&n.toString()!=="[object Object]")throw"The template params have to be the object. Visit https://www.emailjs.com/docs/sdk/send/"},Hb=n=>n.webdriver||!n.languages||n.languages.length===0,qb=()=>new mr(451,"Unavailable For Headless Browser"),MO=(n,a)=>{if(!Array.isArray(n))throw"The BlockList list has to be an array";if(typeof a!="string")throw"The BlockList watchVariable has to be a string"},CO=n=>!n.list?.length||!n.watchVariable,_O=(n,a)=>n instanceof FormData?n.get(a):n[a],Yb=(n,a)=>{if(CO(n))return!1;MO(n.list,n.watchVariable);const r=_O(a,n.watchVariable);return typeof r!="string"?!1:n.list.includes(r)},Gb=()=>new mr(403,"Forbidden"),OO=(n,a)=>{if(typeof n!="number"||n<0)throw"The LimitRate throttle has to be a positive number";if(a&&typeof a!="string")throw"The LimitRate ID has to be a non-empty string"},DO=async(n,a,r)=>{const s=Number(await r.get(n)||0);return a-Date.now()+s},kb=async(n,a,r)=>{if(!a.throttle||!r)return!1;OO(a.throttle,a.id);const s=a.id||n;return await DO(s,a.throttle,r)>0?!0:(await r.set(s,Date.now().toString()),!1)},Xb=()=>new mr(429,"Too Many Requests"),wO=async(n,a,r,s)=>{const c=ih(s),d=c.publicKey||me.publicKey,f=c.blockHeadless||me.blockHeadless,h=c.storageProvider||me.storageProvider,p={...me.blockList,...c.blockList},y={...me.limitRate,...c.limitRate};return f&&Hb(navigator)?Promise.reject(qb()):(Ub(d,n,a),AO(r),r&&Yb(p,r)?Promise.reject(Gb()):await kb(location.pathname,y,h)?Promise.reject(Xb()):Nb("/api/v1.0/email/send",JSON.stringify({lib_version:"4.4.1",user_id:d,service_id:n,template_id:a,template_params:r}),{"Content-type":"application/json"}))},RO=n=>{if(!n||n.nodeName!=="FORM")throw"The 3rd parameter is expected to be the HTML form element or the style selector of the form"},zO=n=>typeof n=="string"?document.querySelector(n):n,jO=async(n,a,r,s)=>{const c=ih(s),d=c.publicKey||me.publicKey,f=c.blockHeadless||me.blockHeadless,h=me.storageProvider||c.storageProvider,p={...me.blockList,...c.blockList},y={...me.limitRate,...c.limitRate};if(f&&Hb(navigator))return Promise.reject(qb());const g=zO(r);Ub(d,n,a),RO(g);const v=new FormData(g);return Yb(p,v)?Promise.reject(Gb()):await kb(location.pathname,y,h)?Promise.reject(Xb()):(v.append("lib_version","4.4.1"),v.append("service_id",n),v.append("template_id",a),v.append("user_id",d),Nb("/api/v1.0/email/send-form",v))},VO={init:EO,send:wO,sendForm:jO,EmailJSResponseStatus:mr},BO=rt.section`
   padding: 100px 20px 50px;
   background-color: #121212;
   color: #ffffff;
@@ -411,17 +411,17 @@ Error generating stack: `+l.message+`
   flex-direction: column;
   align-items: center;
   text-align: center;
-`,NO=rt(Pt.h2)`
+`,LO=rt(Pt.h2)`
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #646cff;
-`,UO=rt(Pt.p)`
+`,NO=rt(Pt.p)`
   font-size: 1.1rem;
   color: #aaaaaa;
   margin-bottom: 50px;
   max-width: 600px;
   line-height: 1.6;
-`,HO=rt(Pt.div)`
+`,UO=rt(Pt.div)`
   background: #242424;
   padding: 40px;
   border-radius: 16px;
@@ -432,7 +432,7 @@ Error generating stack: `+l.message+`
   display: flex;
   flex-direction: column;
   gap: 20px;
-`,qO=rt.form`
+`,HO=rt.form`
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -451,7 +451,7 @@ Error generating stack: `+l.message+`
     outline: none;
     border-color: #646cff;
   }
-`,YO=rt.textarea`
+`,qO=rt.textarea`
   width: 100%;
   padding: 15px;
   background: #1a1a1a;
@@ -467,7 +467,7 @@ Error generating stack: `+l.message+`
     outline: none;
     border-color: #646cff;
   }
-`,GO=rt.button`
+`,YO=rt.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -491,7 +491,7 @@ Error generating stack: `+l.message+`
     cursor: not-allowed;
     transform: none;
   }
-`,kO=rt.a`
+`,GO=rt.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -505,15 +505,15 @@ Error generating stack: `+l.message+`
   &:hover {
     color: #ffffff;
   }
-`,XO=rt.p`
+`,kO=rt.p`
   margin-top: 10px;
   font-size: 0.95rem;
   color: ${n=>n.$isError?"#ff4d4f":"#4caf50"};
-`,PO=rt.p`
+`,XO=rt.p`
   margin-top: 80px;
   color: #555555;
   font-size: 0.9rem;
-`,QO={hidden:{opacity:0,y:30},visible:{opacity:1,y:0,transition:{duration:.6,ease:"easeOut"}}},KO=()=>{const[n,a]=qo({triggerOnce:!0,threshold:.2}),r=I.useRef(),[s,c]=I.useState(!1),[d,f]=I.useState(""),[h,p]=I.useState(!1),y=g=>{g.preventDefault(),c(!0),f("전송 중입니다..."),p(!1),BO.sendForm("service_m1xev7q","template_v9fgid4",r.current,"Q9OYA0eRRYLMeTQQI").then(v=>{c(!1),f("성공적으로 전송되었습니다! 확인 후 답변 드리겠습니다."),g.target.reset(),setTimeout(()=>{f("")},5e3)},v=>{c(!1),p(!0),f("전송에 실패했습니다. 이메일(ochant777@gmail.com)로 직접 연락 부탁드립니다.")})};return L.jsxs(LO,{id:"contact",children:[L.jsx(NO,{initial:{opacity:0,y:-20},animate:a?{opacity:1,y:0}:{},transition:{duration:.6},children:"Get In Touch"}),L.jsxs(UO,{initial:{opacity:0},animate:a?{opacity:1}:{},transition:{duration:.6,delay:.2},children:["새로운 프로젝트 제안이나 개발 관련 이야기는 언제나 환영합니다. ",L.jsx("br",{}),"아래 폼을 통해 메시지를 남겨주시면 빠르게 회신 드리겠습니다!"]}),L.jsxs(HO,{ref:n,variants:QO,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs(qO,{ref:r,onSubmit:y,children:[L.jsx(E0,{type:"text",name:"user_name",placeholder:"성함 / 회사명",required:!0}),L.jsx(E0,{type:"email",name:"user_email",placeholder:"회신받으실 이메일 주소",required:!0}),L.jsx(YO,{name:"message",placeholder:"메시지 내용을 입력해 주세요.",required:!0}),L.jsx(GO,{type:"submit",disabled:s,children:s?"전송 중...":"🚀 메시지 보내기"})]}),d&&L.jsx(XO,{$isError:h,children:d}),L.jsx(kO,{href:"https://github.com/kurecat",target:"_blank",rel:"noopener noreferrer",children:"💻 GitHub 방문하기"})]}),L.jsxs(PO,{children:["© ",new Date().getFullYear()," 정동균. All rights reserved. ",L.jsx("br",{}),"Built with React & Styled-components."]})]})},ZO=rt.section`
+`,PO={hidden:{opacity:0,y:30},visible:{opacity:1,y:0,transition:{duration:.6,ease:"easeOut"}}},QO=()=>{const[n,a]=qo({triggerOnce:!0,threshold:.2}),r=I.useRef(),[s,c]=I.useState(!1),[d,f]=I.useState(""),[h,p]=I.useState(!1),y=g=>{g.preventDefault(),c(!0),f("전송 중입니다..."),p(!1),VO.sendForm("service_m1xev7q","template_v9fgid4",r.current,"Q9OYA0eRRYLMeTQQI").then(v=>{c(!1),f("성공적으로 전송되었습니다! 확인 후 답변 드리겠습니다."),g.target.reset(),setTimeout(()=>{f("")},5e3)},v=>{c(!1),p(!0),f("전송에 실패했습니다. 이메일(ochant777@gmail.com)로 직접 연락 부탁드립니다.")})};return L.jsxs(BO,{id:"contact",children:[L.jsx(LO,{initial:{opacity:0,y:-20},animate:a?{opacity:1,y:0}:{},transition:{duration:.6},children:"Get In Touch"}),L.jsxs(NO,{initial:{opacity:0},animate:a?{opacity:1}:{},transition:{duration:.6,delay:.2},children:["새로운 프로젝트 제안이나 개발 관련 이야기는 언제나 환영합니다. ",L.jsx("br",{}),"아래 폼을 통해 메시지를 남겨주시면 빠르게 회신 드리겠습니다!"]}),L.jsxs(UO,{ref:n,variants:PO,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs(HO,{ref:r,onSubmit:y,children:[L.jsx(E0,{type:"text",name:"user_name",placeholder:"성함 / 회사명",required:!0}),L.jsx(E0,{type:"email",name:"user_email",placeholder:"회신받으실 이메일 주소",required:!0}),L.jsx(qO,{name:"message",placeholder:"메시지 내용을 입력해 주세요.",required:!0}),L.jsx(YO,{type:"submit",disabled:s,children:s?"전송 중...":"🚀 메시지 보내기"})]}),d&&L.jsx(kO,{$isError:h,children:d}),L.jsx(GO,{href:"https://github.com/kurecat",target:"_blank",rel:"noopener noreferrer",children:"💻 GitHub 방문하기"})]}),L.jsxs(XO,{children:["© ",new Date().getFullYear()," 정동균. All rights reserved. ",L.jsx("br",{}),"Built with React & Styled-components."]})]})},KO=rt.section`
   min-height: 100vh;
   padding: 100px 20px;
   background-color: #1a1a1a;
@@ -522,18 +522,18 @@ Error generating stack: `+l.message+`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`,JO=rt(Pt.h2)`
+`,ZO=rt(Pt.h2)`
   font-size: 2.5rem;
   margin-bottom: 60px;
   color: #646cff;
-`,FO=rt.div`
+`,JO=rt.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 900px;
   width: 100%;
   gap: 60px;
-`,WO=rt(Pt.div)`
+`,FO=rt(Pt.div)`
   font-size: 1.15rem;
   color: #cccccc;
   line-height: 1.8;
@@ -552,7 +552,7 @@ Error generating stack: `+l.message+`
     color: #646cff;
     font-weight: bold;
   }
-`,$O=rt(Pt.div)`
+`,WO=rt(Pt.div)`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -585,7 +585,7 @@ Error generating stack: `+l.message+`
     margin: 0;
     word-break: keep-all;
   }
-`,IO=rt(Pt.div)`
+`,$O=rt(Pt.div)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
@@ -619,7 +619,7 @@ Error generating stack: `+l.message+`
   color: #ffffff;
   font-weight: 500;
   margin: 0;
-`,M0={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.2}}},Ui={hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.6,ease:"easeOut"}}},tD=()=>{const[n,a]=qo({triggerOnce:!0,threshold:.1});return L.jsxs(ZO,{id:"about",children:[L.jsx(JO,{initial:{opacity:0,y:-20},animate:a?{opacity:1,y:0}:{},transition:{duration:.6},children:"About Me"}),L.jsxs(FO,{ref:n,children:[L.jsxs(WO,{variants:Ui,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs("p",{style:{margin:0,fontSize:"1.3rem",marginBottom:"15px"},children:['"복잡한 데이터는 ',L.jsx("strong",{children:"직관적"}),"으로, 사용자 경험은 ",L.jsx("strong",{children:"매끄럽게"}),' 설계합니다."']}),L.jsxs("p",{style:{margin:0},children:["안녕하세요, ",L.jsx("span",{className:"highlight",children:"B2B 제조 솔루션부터 B2C 웹 플랫폼까지 아우르는 프론트엔드 개발자 정동균"}),"입니다. 반도체 공정의 방대한 데이터를 다루는 MES 시스템과 결제 및 인증 흐름이 중요한 가전제품 구독 서비스를 구축하며, 유연하고 확장성 있는 프론트엔드 아키텍처를 끊임없이 고민해왔습니다."]})]}),L.jsxs($O,{variants:M0,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs(A0,{variants:Ui,children:[L.jsx("h3",{children:"📊 데이터 렌더링 최적화"}),L.jsx("p",{children:"반도체 MES 프로젝트를 진행하며 수많은 실시간 데이터를 지연 없이 렌더링하는 UI를 설계했습니다. 재사용 가능한 컴포넌트 구조를 통해 유지보수성을 높이고 화면 성능을 개선하는 데 집중합니다."})]}),L.jsxs(A0,{variants:Ui,children:[L.jsx("h3",{children:"🔒 안전하고 매끄러운 UX"}),L.jsx("p",{children:"가전제품 구독 서비스에서 JWT와 Spring Security를 활용한 프론트엔드 인증 로직을 구현했습니다. 복잡한 비즈니스 로직(결제, 구독) 속에서도 사용자가 길을 잃지 않는 직관적인 대시보드를 구축합니다."})]})]}),L.jsxs(IO,{variants:M0,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Name"}),L.jsx(eo,{children:"정동균"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Location"}),L.jsx(eo,{children:"충청남도 천안시"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Position"}),L.jsx(eo,{children:"Frontend Developer"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Email"}),L.jsx(eo,{children:"ochant777@gmail.com"})]})]})]})]})},eD=rt(Pt.button)`
+`,M0={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.2}}},Ui={hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.6,ease:"easeOut"}}},IO=()=>{const[n,a]=qo({triggerOnce:!0,threshold:.1});return L.jsxs(KO,{id:"about",children:[L.jsx(ZO,{initial:{opacity:0,y:-20},animate:a?{opacity:1,y:0}:{},transition:{duration:.6},children:"About Me"}),L.jsxs(JO,{ref:n,children:[L.jsxs(FO,{variants:Ui,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs("p",{style:{margin:0,fontSize:"1.3rem",marginBottom:"15px"},children:['"복잡한 데이터는 ',L.jsx("strong",{children:"직관적"}),"으로, 사용자 경험은 ",L.jsx("strong",{children:"매끄럽게"}),' 설계합니다."']}),L.jsxs("p",{style:{margin:0},children:["안녕하세요, ",L.jsx("span",{className:"highlight",children:"B2B 제조 솔루션부터 B2C 웹 플랫폼까지 아우르는 프론트엔드 개발자 정동균"}),"입니다. 반도체 공정의 방대한 데이터를 다루는 MES 시스템과 결제 및 인증 흐름이 중요한 가전제품 구독 서비스를 구축하며, 유연하고 확장성 있는 프론트엔드 아키텍처를 끊임없이 고민해왔습니다."]})]}),L.jsxs(WO,{variants:M0,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs(A0,{variants:Ui,children:[L.jsx("h3",{children:"📊 데이터 렌더링 최적화"}),L.jsx("p",{children:"반도체 MES 프로젝트를 진행하며 수많은 실시간 데이터를 지연 없이 렌더링하는 UI를 설계했습니다. 재사용 가능한 컴포넌트 구조를 통해 유지보수성을 높이고 화면 성능을 개선하는 데 집중합니다."})]}),L.jsxs(A0,{variants:Ui,children:[L.jsx("h3",{children:"🔒 안전하고 매끄러운 UX"}),L.jsx("p",{children:"가전제품 구독 서비스에서 JWT와 Spring Security를 활용한 프론트엔드 인증 로직을 구현했습니다. 복잡한 비즈니스 로직(결제, 구독) 속에서도 사용자가 길을 잃지 않는 직관적인 대시보드를 구축합니다."})]})]}),L.jsxs($O,{variants:M0,initial:"hidden",animate:a?"visible":"hidden",children:[L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Name"}),L.jsx(eo,{children:"정동균"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Location"}),L.jsx(eo,{children:"충청남도 천안시"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Position"}),L.jsx(eo,{children:"Frontend Developer"})]}),L.jsxs(Is,{variants:Ui,children:[L.jsx(to,{children:"Email"}),L.jsx(eo,{children:"ochant777@gmail.com"})]})]})]})]})},tD=rt(Pt.button)`
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -648,4 +648,4 @@ Error generating stack: `+l.message+`
     width: 45px;
     height: 45px;
   }
-`,nD=()=>{const[n,a]=I.useState(!1);I.useEffect(()=>{const s=()=>{window.scrollY>300?a(!0):a(!1)};return window.addEventListener("scroll",s),()=>window.removeEventListener("scroll",s)},[]);const r=()=>{window.scrollTo({top:0,behavior:"smooth"})};return L.jsx(yo,{children:n&&L.jsx(eD,{onClick:r,initial:{opacity:0,scale:.5},animate:{opacity:1,scale:1},exit:{opacity:0,scale:.5,transition:{duration:.2}},whileHover:{y:-5},whileTap:{scale:.9},"aria-label":"Scroll to top",children:L.jsx("svg",{width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2.5",strokeLinecap:"round",strokeLinejoin:"round",children:L.jsx("path",{d:"M12 19V5M5 12l7-7 7 7"})})})})};function iD(){return L.jsxs("div",{className:"portfolio-app",children:[L.jsx(YE,{}),L.jsxs("main",{children:[L.jsx(k2,{}),L.jsx(tD,{}),L.jsx(lO,{}),L.jsx(xO,{})]}),L.jsx(KO,{}),L.jsx(nD,{})]})}Ex.createRoot(document.getElementById("root")).render(L.jsx(iD,{}));
+`,eD=()=>{const[n,a]=I.useState(!1);I.useEffect(()=>{const s=()=>{window.scrollY>300?a(!0):a(!1)};return window.addEventListener("scroll",s),()=>window.removeEventListener("scroll",s)},[]);const r=()=>{window.scrollTo({top:0,behavior:"smooth"})};return L.jsx(yo,{children:n&&L.jsx(tD,{onClick:r,initial:{opacity:0,scale:.5},animate:{opacity:1,scale:1},exit:{opacity:0,scale:.5,transition:{duration:.2}},whileHover:{y:-5},whileTap:{scale:.9},"aria-label":"Scroll to top",children:L.jsx("svg",{width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2.5",strokeLinecap:"round",strokeLinejoin:"round",children:L.jsx("path",{d:"M12 19V5M5 12l7-7 7 7"})})})})};function nD(){return L.jsxs("div",{className:"portfolio-app",children:[L.jsx(YE,{}),L.jsxs("main",{children:[L.jsx(k2,{}),L.jsx(IO,{}),L.jsx(lO,{}),L.jsx(TO,{})]}),L.jsx(QO,{}),L.jsx(eD,{})]})}Ex.createRoot(document.getElementById("root")).render(L.jsx(nD,{}));
