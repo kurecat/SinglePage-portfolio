@@ -20,12 +20,25 @@ const skillCategories = [
   },
   // {
   //   // 🔥 이 포트폴리오의 가장 큰 차별점인 도메인 지식 강조
-  //   title: "MES Domain Knowledge", 
+  //   title: "MES Domain Knowledge",
   //   skills: ["스마트 팩토리", "BOM / MRP 설계", "공정/실적 관리 (POP)", "설비 연동 (PLC)", "KPI 대시보드"],
   // },
   {
     title: "Tools & Collaboration",
-    skills: ["Git / GitHub", "Figma", "Notion.so"],
+    skills: ["Git / GitHub", "Figma", "Notion"],
+  },
+
+  {
+    title: "AI / Data",
+    skills: [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Scikit-learn",
+      "TensorFlow",
+      "RandomForest",
+      "XGBoost",
+    ],
   },
 ];
 

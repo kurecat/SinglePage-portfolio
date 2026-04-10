@@ -8,48 +8,90 @@ const mainProjects = [
     id: 1,
     title: "반도체 패키징 공정 MES",
     period: "2026.01.15 - 2026.02.10",
-    teamSize: "5명", 
-    description: "지능화된 생산관리 솔루션(MES-WEB)으로, 반도체 패키징 공정의 데이터 추적 및 생산 관리를 돕는 통합 웹 서비스 구축",
-    detailedDescription: "이 프로젝트는 반도체 패키징 공정에서 발생하는 수많은 데이터를 실시간으로 모니터링하고 제어하기 위해 기획되었습니다. 프론트엔드 메인 개발자로서 React를 활용해 재사용 가능한 UI 컴포넌트를 설계하였고, 대용량 데이터 렌더링 최적화에 집중했습니다. 백엔드(Spring Boot, JPA)와의 원활한 API 통신 구조를 설계하여 안정적인 서비스를 구현했습니다.",
+    teamSize: "5명",
+    description:
+      "지능화된 생산관리 솔루션(MES-WEB)으로, 반도체 패키징 공정의 데이터 추적 및 생산 관리를 돕는 통합 웹 서비스 구축",
+    detailedDescription:
+      "이 프로젝트는 반도체 패키징 공정에서 발생하는 수많은 데이터를 실시간으로 모니터링하고 제어하기 위해 기획되었습니다. 프론트엔드 메인 개발자로서 React를 활용해 재사용 가능한 UI 컴포넌트를 설계하였고, 대용량 데이터 렌더링 최적화에 집중했습니다. 백엔드(Spring Boot, JPA)와의 원활한 API 통신 구조를 설계하여 안정적인 서비스를 구현했습니다.",
     role: "Main: FrontEnd | Sub: BackEnd",
     tools: "IntelliJ, VS Code, Figma",
-    techStack: ["React", "Axios", "Java", "C#", "Spring Boot", "JPA", "JWT", "MySQL"],
-    localVideoPath: `${import.meta.env.BASE_URL}videos/MES.mp4`, 
-    githubUrl: "https://github.com/kurecat/mes_final_project_total", 
+    techStack: [
+      "React",
+      "Axios",
+      "Java",
+      "C#",
+      "Spring Boot",
+      "JPA",
+      "JWT",
+      "MySQL",
+    ],
+    localVideoPath: `${import.meta.env.BASE_URL}videos/MES.mp4`,
+    githubUrl: "https://github.com/kurecat/mes_final_project_total",
     localPdfPath: `${import.meta.env.BASE_URL}docs/MES.pdf`,
   },
   {
     id: 2,
     title: "가전제품 구독 서비스",
     period: "2025.12.10 - 2025.12.26",
-    teamSize: "4명", 
-    description: "사용자 맞춤형 가전제품 대여 및 구독 내역을 관리하고 결제 흐름을 지원하는 웹 플랫폼 개발",
-    detailedDescription: "사용자가 원하는 가전제품을 쉽게 찾아 구독하고, 관리자는 구독 현황 및 결제 내역을 파악할 수 있는 서비스입니다. 사용자 친화적인 대시보드 UI를 구성하고, Spring Security와 JWT를 활용한 로그인/인증 로직을 프론트엔드단에서 매끄럽게 처리하는 경험을 쌓았습니다.",
+    teamSize: "4명",
+    description:
+      "사용자 맞춤형 가전제품 대여 및 구독 내역을 관리하고 결제 흐름을 지원하는 웹 플랫폼 개발",
+    detailedDescription:
+      "사용자가 원하는 가전제품을 쉽게 찾아 구독하고, 관리자는 구독 현황 및 결제 내역을 파악할 수 있는 서비스입니다. 사용자 친화적인 대시보드 UI를 구성하고, Spring Security와 JWT를 활용한 로그인/인증 로직을 프론트엔드단에서 매끄럽게 처리하는 경험을 쌓았습니다.",
     role: "Main: FrontEnd | Sub: BackEnd",
     tools: "IntelliJ, VS Code, Figma",
-    techStack: ["React", "Axios", "JavaScript", "Java", "Spring Boot", "Spring Security", "JPA", "MySQL"],
-    localVideoPath: "", 
-    githubUrl: "https://github.com/qdpnok/nurim", 
+    techStack: [
+      "React",
+      "Axios",
+      "JavaScript",
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "JPA",
+      "MySQL",
+    ],
+    localVideoPath: "",
+    githubUrl: "https://github.com/qdpnok/nurim",
     localPdfPath: `${import.meta.env.BASE_URL}docs/NURIM.pdf`,
   },
 ];
 
-// const miniProjects = [
-//   {
-//     id: 3,
-//     title: "미니 프로젝트 예시",
-//     period: "2025.09 - 2025.10",
-//     teamSize: "1명 (개인)",
-//     description: "학습 목적으로 진행한 간단한 토이 프로젝트입니다.",
-//     detailedDescription: "React의 상태 관리와 styled-components의 활용법을 익히기 위해 진행한 개인 프로젝트입니다. 간단한 CRUD 기능을 구현했습니다.",
-//     role: "FrontEnd Development",
-//     tools: "VS Code",
-//     techStack: ["React", "JavaScript", "HTML/CSS"],
-//     localVideoPath: "", 
-//     githubUrl: "https://github.com/kurecat/mini-project",
-//     presentationUrl: "",
-//   }
-// ];
+const miniProjects = [
+  {
+    id: 3,
+    title: "사전감지 고장예측 프로그램",
+    period: "2026.03.12 - 2026.03.30",
+    teamSize: "6명",
+    description:
+      "진동 센서 데이터를 기반으로 모터의 고장 확률을 실시간으로 예측하고, 다중 설비를 통합 모니터링할 수 있는 AI 기반 예지보전 시스템입니다.",
+    detailedDescription:
+      "진동 센서 데이터를 기반으로 모터 고장 여부를 예측하는 AI 시스템을 구현했습니다. CSV 데이터에서 RMS, STD, Kurtosis 등의 Feature를 추출하고, StandardScaler와 RandomForest를 결합한 파이프라인 모델을 구축했습니다. React 기반 대시보드를 개발하여 다중 설비 상태, 고장 확률, 위험 장비를 실시간으로 시각화하고, 데이터 로그 조회 및 CSV 업로드 분석 기능을 구현했습니다.\n\nFastAPI와 연동하여 실시간 데이터 처리 및 예측 결과를 통합 관리하는 시스템 구조를 구성했습니다.",
+    role: "Frontend Development / PM",
+    tools: "VS Code, Figma, Git",
+    techStack: ["React", "Axios", "FastAPI", "MongoDB"],
+
+    localVideoPath: "",
+
+    githubUrl:
+      "https://github.com/kurecat/bearing-predictive-maintenance-project",
+
+    presentationUrl: "",
+  },
+  {
+    id: 4,
+    title: "컴퓨터 비전 기반 '스마트팜' 이상 징후 자율 대응 자동화 시스템",
+    period: "2026.03.31 - 2026.04.27",
+    teamSize: "7명",
+    description: "",
+    detailedDescription: "",
+    role: "FrontEnd Development",
+    tools: "VS Code, Figam, Git, ",
+    techStack: ["React", "Python", "FastApi", "MongoDB", "Oracle"],
+    localVideoPath: "",
+    githubUrl: "https://github.com/orgs/Team-2-Final/repositories",
+    presentationUrl: "",
+  },
+];
 
 const Section = styled.section`
   min-height: 100vh;
@@ -128,7 +170,10 @@ const ProjectInfoText = styled.span`
   display: block;
   margin-bottom: 5px;
 
-  strong { color: #aaaaaa; font-weight: 500; }
+  strong {
+    color: #aaaaaa;
+    font-weight: 500;
+  }
 `;
 
 const ProjectDescription = styled.p`
@@ -177,7 +222,9 @@ const DropdownButton = styled.button`
 
   .icon {
     transition: transform 0.3s ease;
-    &.open { transform: rotate(180deg); }
+    &.open {
+      transform: rotate(180deg);
+    }
   }
 `;
 
@@ -201,16 +248,23 @@ const ModalContent = styled(motion.div)`
   border: 1px solid #333;
   border-radius: 16px;
   width: 100%;
-  max-width: 850px; 
+  max-width: 850px;
   max-height: 90vh;
   overflow-y: auto;
   padding: 40px;
   position: relative;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 
-  &::-webkit-scrollbar { width: 8px; }
-  &::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
-  &::-webkit-scrollbar-thumb:hover { background: #646cff; }
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #646cff;
+  }
 `;
 
 const CloseButton = styled.button`
@@ -226,7 +280,9 @@ const CloseButton = styled.button`
   line-height: 1;
   z-index: 10;
 
-  &:hover { color: #ffffff; }
+  &:hover {
+    color: #ffffff;
+  }
 `;
 
 const VideoContainer = styled.div`
@@ -248,7 +304,7 @@ const VideoContainer = styled.div`
 const PdfContainer = styled.div`
   margin-top: 30px;
   width: 100%;
-  height: 600px; 
+  height: 600px;
   border-radius: 8px;
   border: 1px solid #333;
   overflow: hidden;
@@ -257,7 +313,7 @@ const PdfContainer = styled.div`
     width: 100%;
     height: 100%;
     border: none;
-    background-color: #ffffff; 
+    background-color: #ffffff;
   }
 `;
 
@@ -289,7 +345,8 @@ const ButtonGroup = styled.div`
   gap: 15px;
   flex-wrap: wrap;
 
-  a, button {
+  a,
+  button {
     display: inline-block;
     padding: 12px 24px;
     background: #333;
@@ -303,11 +360,16 @@ const ButtonGroup = styled.div`
     font-family: inherit;
     transition: all 0.3s;
 
-    &:hover { background: #646cff; transform: translateY(-2px); }
+    &:hover {
+      background: #646cff;
+      transform: translateY(-2px);
+    }
   }
   .primary {
     background: #646cff;
-    &:hover { background: #535bf2; }
+    &:hover {
+      background: #535bf2;
+    }
   }
 `;
 
@@ -325,21 +387,36 @@ const modalOverlayVariants = {
 
 const modalContentVariants = {
   hidden: { opacity: 0, y: 50, scale: 0.95 },
-  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.4, ease: "easeOut" } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.4, ease: "easeOut" },
+  },
   exit: { opacity: 0, y: 20, scale: 0.95, transition: { duration: 0.3 } },
 };
 
 const accordionVariants = {
   hidden: { height: 0, opacity: 0, overflow: "hidden" },
-  visible: { height: "auto", opacity: 1, overflow: "hidden", transition: { duration: 0.5, ease: "easeInOut" } },
-  exit: { height: 0, opacity: 0, overflow: "hidden", transition: { duration: 0.4, ease: "easeInOut" } }
+  visible: {
+    height: "auto",
+    opacity: 1,
+    overflow: "hidden",
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
+  exit: {
+    height: 0,
+    opacity: 0,
+    overflow: "hidden",
+    transition: { duration: 0.4, ease: "easeInOut" },
+  },
 };
 
 const Projects = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [selectedProject, setSelectedProject] = useState(null);
   const [isMiniOpen, setIsMiniOpen] = useState(false);
-  
+
   const [showPdf, setShowPdf] = useState(false);
 
   useEffect(() => {
@@ -349,7 +426,9 @@ const Projects = () => {
     } else {
       document.body.style.overflow = "auto";
     }
-    return () => { document.body.style.overflow = "auto"; };
+    return () => {
+      document.body.style.overflow = "auto";
+    };
   }, [selectedProject]);
 
   return (
@@ -361,7 +440,7 @@ const Projects = () => {
       >
         Project Experience
       </SectionTitle>
-      
+
       <SectionSubtitle
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}
@@ -384,9 +463,15 @@ const Projects = () => {
             <RoleBadge>{project.role}</RoleBadge>
             <ProjectTitle>{project.title}</ProjectTitle>
             <ProjectInfoGroup>
-              <ProjectInfoText><strong>🗓 Period:</strong> {project.period}</ProjectInfoText>
-              <ProjectInfoText><strong>👥Team:</strong> {project.teamSize}</ProjectInfoText>
-              <ProjectInfoText><strong>🛠 Tools:</strong> {project.tools}</ProjectInfoText>
+              <ProjectInfoText>
+                <strong>🗓 Period:</strong> {project.period}
+              </ProjectInfoText>
+              <ProjectInfoText>
+                <strong>👥Team:</strong> {project.teamSize}
+              </ProjectInfoText>
+              <ProjectInfoText>
+                <strong>🛠 Tools:</strong> {project.tools}
+              </ProjectInfoText>
             </ProjectInfoGroup>
             <ProjectDescription>{project.description}</ProjectDescription>
             <TechList>
@@ -398,10 +483,10 @@ const Projects = () => {
         ))}
       </GridContainer>
 
-      {/* <DropdownButton onClick={() => setIsMiniOpen(!isMiniOpen)}>
+      <DropdownButton onClick={() => setIsMiniOpen(!isMiniOpen)}>
         Mini Projects
         <span className={`icon ${isMiniOpen ? "open" : ""}`}>▼</span>
-      </DropdownButton> */}
+      </DropdownButton>
 
       <AnimatePresence>
         {isMiniOpen && (
@@ -412,7 +497,9 @@ const Projects = () => {
             exit="exit"
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
-            <GridContainer style={{ paddingTop: "10px", paddingBottom: "30px" }}>
+            <GridContainer
+              style={{ paddingTop: "10px", paddingBottom: "30px" }}
+            >
               {miniProjects.map((project, index) => (
                 <Card
                   key={project.id}
@@ -423,9 +510,15 @@ const Projects = () => {
                   <RoleBadge>{project.role}</RoleBadge>
                   <ProjectTitle>{project.title}</ProjectTitle>
                   <ProjectInfoGroup>
-                    <ProjectInfoText><strong>🗓 Period:</strong> {project.period}</ProjectInfoText>
-                    <ProjectInfoText><strong>👥Team:</strong> {project.teamSize}</ProjectInfoText>
-                    <ProjectInfoText><strong>🛠 Tools:</strong> {project.tools}</ProjectInfoText>
+                    <ProjectInfoText>
+                      <strong>🗓 Period:</strong> {project.period}
+                    </ProjectInfoText>
+                    <ProjectInfoText>
+                      <strong>👥Team:</strong> {project.teamSize}
+                    </ProjectInfoText>
+                    <ProjectInfoText>
+                      <strong>🛠 Tools:</strong> {project.tools}
+                    </ProjectInfoText>
                   </ProjectInfoGroup>
                   <ProjectDescription>{project.description}</ProjectDescription>
                   <TechList>
@@ -456,16 +549,18 @@ const Projects = () => {
               exit="exit"
               onClick={(e) => e.stopPropagation()}
             >
-              <CloseButton onClick={() => setSelectedProject(null)}>×</CloseButton>
+              <CloseButton onClick={() => setSelectedProject(null)}>
+                ×
+              </CloseButton>
 
               {selectedProject.localVideoPath && (
                 <VideoContainer>
-                  <video 
-                    src={selectedProject.localVideoPath} 
-                    controls 
-                    autoPlay 
-                    muted 
-                    playsInline 
+                  <video
+                    src={selectedProject.localVideoPath}
+                    controls
+                    autoPlay
+                    muted
+                    playsInline
                   >
                     해당 브라우저는 영상을 지원하지 않습니다.
                   </video>
@@ -473,24 +568,39 @@ const Projects = () => {
               )}
 
               <ModalTitle>{selectedProject.title}</ModalTitle>
-              
+
               <ProjectInfoGroup>
-                <ProjectInfoText><strong>🗓 Period:</strong> {selectedProject.period}</ProjectInfoText>
-                <ProjectInfoText><strong>👥Team:</strong> {selectedProject.teamSize}</ProjectInfoText>
-                <ProjectInfoText><strong>🛠 Tools:</strong> {selectedProject.tools}</ProjectInfoText>
-                <ProjectInfoText><strong>🎯 Role:</strong> {selectedProject.role}</ProjectInfoText>
+                <ProjectInfoText>
+                  <strong>🗓 Period:</strong> {selectedProject.period}
+                </ProjectInfoText>
+                <ProjectInfoText>
+                  <strong>👥Team:</strong> {selectedProject.teamSize}
+                </ProjectInfoText>
+                <ProjectInfoText>
+                  <strong>🛠 Tools:</strong> {selectedProject.tools}
+                </ProjectInfoText>
+                <ProjectInfoText>
+                  <strong>🎯 Role:</strong> {selectedProject.role}
+                </ProjectInfoText>
               </ProjectInfoGroup>
 
               <SectionSubHeading>프로젝트 상세 소개</SectionSubHeading>
-              <ModalDetailedText>{selectedProject.detailedDescription}</ModalDetailedText>
+              <ModalDetailedText>
+                {selectedProject.detailedDescription}
+              </ModalDetailedText>
 
               <ButtonGroup>
                 {selectedProject.githubUrl && (
-                  <a href={selectedProject.githubUrl} target="_blank" rel="noreferrer" className="primary">
+                  <a
+                    href={selectedProject.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="primary"
+                  >
                     💻 GitHub 코드 보기
                   </a>
                 )}
-                
+
                 {selectedProject.localPdfPath && (
                   <button onClick={() => setShowPdf(!showPdf)}>
                     {showPdf ? "📄 발표 자료 닫기" : "📄 발표 자료 보기"}
@@ -509,15 +619,14 @@ const Projects = () => {
                   >
                     <SectionSubHeading>📄 발표 자료</SectionSubHeading>
                     <PdfContainer>
-                      <iframe 
-                        src={`${selectedProject.localPdfPath}#view=FitH`} 
+                      <iframe
+                        src={`${selectedProject.localPdfPath}#view=FitH`}
                         title={`${selectedProject.title} 발표자료`}
                       />
                     </PdfContainer>
                   </motion.div>
                 )}
               </AnimatePresence>
-
             </ModalContent>
           </ModalOverlay>
         )}
