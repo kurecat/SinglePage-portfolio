@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import emailjs from "@emailjs/browser";
 
-// --- Styled Components ---
 const Section = styled.section`
   padding: 100px 20px 50px;
   background-color: #121212;
@@ -137,7 +136,6 @@ const FooterText = styled.p`
   font-size: 0.9rem;
 `;
 
-// --- Framer Motion 설정 ---
 const fadeUpVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -160,20 +158,18 @@ const Contact = () => {
     setIsSubmitting(true);
     setStatusMessage("전송 중입니다...");
     setIsError(false);
-
-    // 🔥여기에 3단계에서 발급받을 키값들을 넣게 됩니다.
     emailjs
       .sendForm(
-        "service_m1xev7q", // 서비스 ID
-        "template_v9fgid4", // 템플릿 ID
+        "service_m1xev7q", 
+        "template_v9fgid4", 
         form.current,
-        "Q9OYA0eRRYLMeTQQI" // 퍼블릭 키
+        "Q9OYA0eRRYLMeTQQI" 
       )
       .then(
         (result) => {
           setIsSubmitting(false);
           setStatusMessage("성공적으로 전송되었습니다! 확인 후 답변 드리겠습니다.");
-          e.target.reset(); // 폼 초기화
+          e.target.reset();
           
           setTimeout(() => {
             setStatusMessage("");

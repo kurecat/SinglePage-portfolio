@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-// --- Styled Components ---
 const Section = styled.section`
   min-height: 100vh;
   padding: 100px 20px;
@@ -130,7 +129,6 @@ const InfoValue = styled.p`
   margin: 0;
 `;
 
-// --- Framer Motion 애니메이션 설정 ---
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -181,7 +179,6 @@ const AboutMe = () => {
           </p>
         </Description>
 
-        {/* 🔥 메인 프로젝트 기반 핵심 가치관 영역 */}
         <ValuesContainer
           variants={containerVariants}
           initial="hidden"

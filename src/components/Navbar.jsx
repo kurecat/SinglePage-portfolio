@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 
-// --- Styled Components ---
 const Nav = styled.nav`
   position: fixed;
   top: 0;
@@ -106,8 +105,7 @@ const Navbar = () => {
               Home
             </Link>
           </NavItem>
-          
-          {/* 🔥 새로 추가된 About 메뉴 🔥 */}
+        
           <NavItem>
             <Link
               activeClass="active"

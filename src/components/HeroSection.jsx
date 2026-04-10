@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
-// --- Styled Components 정의 ---
-
 const Section = styled.section`
   height: 100vh;
   display: flex;
@@ -75,8 +73,6 @@ const ButtonGroup = styled(motion.div)`
   }
 `;
 
-// --- 메인 컴포넌트 ---
-
 const HeroSection = () => {
   return (
     <Section id="hero">
@@ -91,7 +87,6 @@ const HeroSection = () => {
           입니다.
         </Title>
 
-        {/* 🔥 AboutMe 섹션과 이어지도록 포트폴리오의 핵심 메시지로 수정 */}
         <Description
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
