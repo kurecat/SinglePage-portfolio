@@ -54,6 +54,30 @@ const mainProjects = [
     githubUrl: "https://github.com/qdpnok/nurim",
     localPdfPath: `${import.meta.env.BASE_URL}docs/NURIM.pdf`,
   },
+  {
+    id: 3,
+    title: "컴퓨터 비전 기반 스마트팜 이상 징후 자율 대응 자동화 시스템",
+    period: "2026.03.31 - 2026.04.27",
+    teamSize: "7명",
+    description:
+      "작물 생육 상태를 이미지 기반으로 분석하고 이상 징후를 탐지하여 자동 대응까지 수행하는 AI 스마트팜 시스템 개발",
+    detailedDescription:
+      "CCTV 기반 이미지 데이터를 활용하여 작물의 초장, 엽수, 착색 상태를 분석하고 생육 상태를 실시간으로 판단하는 시스템을 구축했습니다. 멀티뷰 기반 생육 추론 모델과 착색 비율 분석 모델을 결합하여 종합적인 작물 상태를 판단하고, 이상 징후 발생 시 자동 대응이 가능하도록 설계했습니다. 또한 React 기반 대시보드를 통해 실시간 모니터링 환경을 구현하고, FastAPI를 활용한 AI 추론 API와 MongoDB 및 Oracle을 연동하여 데이터 저장 및 관리 구조를 구축했습니다. 실제 CCTV 장비가 없는 환경에서 Python 시뮬레이터를 활용하여 대용량 이미지 데이터를 시간 흐름 기반으로 처리하고, 이를 실시간 CCTV 입력처럼 AI 모델에 순차적으로 전달하는 구조를 구현했습니다.",
+    role: "Main: FrontEnd | Sub: BackEnd & AI Integration",
+    tools: "VS Code, Figma, Git",
+    techStack: [
+      "React",
+      "JavaScript",
+      "Python",
+      "FastAPI",
+      "MongoDB",
+      "Oracle",
+      "PyTorch",
+    ],
+    localVideoPath: "",
+    githubUrl: "https://github.com/Team-2-Final",
+    presentationUrl: "",
+  },
 ];
 
 const miniProjects = [
@@ -75,20 +99,6 @@ const miniProjects = [
     githubUrl:
       "https://github.com/kurecat/bearing-predictive-maintenance-project",
 
-    presentationUrl: "",
-  },
-  {
-    id: 4,
-    title: "컴퓨터 비전 기반 '스마트팜' 이상 징후 자율 대응 자동화 시스템",
-    period: "2026.03.31 - 2026.04.27",
-    teamSize: "7명",
-    description: "",
-    detailedDescription: "",
-    role: "FrontEnd Development",
-    tools: "VS Code, Figam, Git, ",
-    techStack: ["React", "Python", "FastApi", "MongoDB", "Oracle"],
-    localVideoPath: "",
-    githubUrl: "https://github.com/orgs/Team-2-Final/repositories",
     presentationUrl: "",
   },
 ];
